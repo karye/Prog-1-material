@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "7cf7ddd414d0fa59",
+    "type": "split",
+    "children": [
+      {
+        "id": "444e232e8399ed64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5418f10bbb69208a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Ny flik"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "216b2b8e2b9b3fb1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3335f81d100ae3ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11be22bb90d08500",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Filutforskare"
+            }
+          },
+          {
+            "id": "f504ad86ed14073b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Sök"
+            }
+          },
+          {
+            "id": "24cdd754e2df006f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bokmärken"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5
+  },
+  "right": {
+    "id": "ccd1361d2076be5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8b7db3552f09589d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3036493c06022df",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Bakåtlänkar"
+            }
+          },
+          {
+            "id": "8c660dfb0790edf9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Utgående länkar"
+            }
+          },
+          {
+            "id": "27cecb6e24fb12d8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Taggar"
+            }
+          },
+          {
+            "id": "74bd1cf0c20925a1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Alla egenskaper"
+            }
+          },
+          {
+            "id": "35611930f94df434",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Disposition"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Öppna snabbväxlare": false,
+      "graph:Öppna grafvy": false,
+      "canvas:Skapa ny canvas": false,
+      "daily-notes:Öppna dagens anteckning": false,
+      "templates:Infoga mall": false,
+      "command-palette:Öppna kommandopalett": false,
+      "bases:Skapa ny bas": false
+    }
+  },
+  "active": "5418f10bbb69208a",
+  "lastOpenFiles": [
+    "K4/material-k4-listor.md",
+    "K7 - funktioner/prov-7c-funktioner.md",
+    "K7 - funktioner/prov-7b-funktioner.md",
+    "K7 - funktioner/prov-7a-funktioner.md",
+    "K7 - funktioner",
+    "K6 - for-loopar/träning-inför-blandat-listor-loopar-b.md",
+    "K6 - for-loopar/träning-inför-blandat-listor-loopar-a.md",
+    "K6 - for-loopar/prov-blandat-listor-loopar-och-slump.md",
+    "K6 - for-loopar",
+    "K5 - index & random/träning-inför-prov-5b.md",
+    "K5 - index & random/träning-inför-prov-5a.md",
+    "K5 - index & random/prov-5b-listor-och-index.md",
+    "K5 - index & random/prov-5a-listor-och-index.md",
+    "K5 - index & random",
+    "K4 - listor/material-k4-listor.md",
+    "K4 - listor",
+    "K3 - while-loopar/prov-3a-while-loopar.md",
+    "K3 - while-loopar/material-k3-while-loopar.md",
+    "K3 - while-loopar",
+    "K2 - villkor/material-k2-villkor.md",
+    "K2 - villkor",
+    "K1 - print & input/träning-inför-prov-1a.md",
+    "K1 - print & input/prov-1b-input-och-output.md",
+    "K1 - print & input/prov-1a-input-och-output.md",
+    "K1 - print & input/material-k1-input-och-output.md",
+    "K1 - print & input",
+    "K4/prov-4a-listor.md",
+    "K4/Namnlös.md",
+    "K5/träning-inför-prov-5a.md",
+    "blandat/prov-blandat-villkor-och-loopar.md",
+    "blandat/träning-inför-blandat-villkor-och-loopar.md",
+    "K6/träning-inför-blandat-listor-loopar-b.md",
+    "K6/träning-inför-blandat-listor-loopar-a.md"
+  ]
+}
