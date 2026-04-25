@@ -1,4 +1,4 @@
-# Prov 2a: while-loopar
+# Prov 3a: while-loopar
 
 Detta prov testar dina kunskaper i att använda `while`-loopar. Du ska kunna skriva program som upprepar sig, tar emot inmatning och kan avslutas på rätt sätt.
 

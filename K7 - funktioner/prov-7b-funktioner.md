@@ -1,4 +1,4 @@
-# Prov 6b: funktioner i Python
+# Prov 7b: funktioner i Python
 
 I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rätt ordning och skicka in information (argument) till dem.
 
@@ -7,6 +7,8 @@ I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rä
 * Använd korrekta namn på funktioner.
 * Kom ihåg att definiera funktioner med `def`.
 * Var noga med indentering (indrag).
+
+---
 
 ### Uppgift 1: skapa en enkel funktion och testa
 
@@ -26,6 +28,8 @@ def vaderprognos():
 
 vaderprognos()
 ```
+
+---
 
 ### Uppgift 2: använda en funktion flera gånger
 
@@ -49,6 +53,8 @@ larm()
 larm()
 larm()
 ```
+
+---
 
 ### Uppgift 3: flera funktioner i rätt följd
 
@@ -85,6 +91,8 @@ blanda_fyllning()
 dekorera()
 ```
 
+---
+
 ### Uppgift 4: funktion med ett husdjur (argument)
 
 **Uppgift:** Skapa en funktion som heter `klappa_djur(djur)`. Funktionen ska ta emot **ett argument** (ett djur) och skriva ut en mening där djuret är med. Anropa sedan funktionen och skicka in ett valfritt djur i parentesen.
@@ -103,6 +111,8 @@ def klappa_djur(djur):
 
 klappa_djur("hund")
 ```
+
+---
 
 ### Uppgift 5: funktion för beräkning av kvitto (två argument)
 

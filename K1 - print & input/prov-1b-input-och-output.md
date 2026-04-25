@@ -2,6 +2,8 @@
 
 I det här provet testas din förmåga att skriva ut text till skärmen, hämta information från användaren och spara i variabler, samt bygga meningar med f-strängar. Temat för provet är **café och restaurang**.
 
+---
+
 ### Uppgift 1: Välkomstskylt
 
 **Uppgift:** Skriv ett program som använder `print()` två gånger. Programmet ska först skriva ut en rubrik för caféet, och sedan en välkomstmening på raden under.
@@ -17,6 +19,8 @@ Här serverar vi stans bästa bullar.
 print("Välkommen till Kodcaféet!")
 print("Här serverar vi stans bästa bullar.")
 ```
+
+---
 
 ### Uppgift 2: Kvittoutskrift
 
@@ -38,6 +42,8 @@ print("Kanelbulle: 25 kr")
 print("----------------")
 ```
 
+---
+
 ### Uppgift 3: Fråga efter namn
 
 **Uppgift:** Skriv ett program som använder `input()` för att fråga kunden vad de heter. Spara svaret i en variabel som heter `namn`. Använd sedan `print()` för att skriva ut ordet "Varsågod", följt av kundens namn, följt av texten "här är din beställning".
@@ -53,6 +59,8 @@ Varsågod Anna här är din beställning
 namn = input("Vad heter du? ")
 print("Varsågod", namn, "här är din beställning")
 ```
+
+---
 
 ### Uppgift 4: Kaffe eller te?
 
@@ -75,6 +83,8 @@ dryck = input("Vilken varm dryck vill du ha? ")
 bakverk = input("Vilket bakverk vill du ha? ")
 print(f"Du har beställt {dryck} och en {bakverk}.")
 ```
+
+---
 
 ### Uppgift 5: Det stora fikasällskapet
 

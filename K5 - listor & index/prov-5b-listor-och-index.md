@@ -1,8 +1,10 @@
-# Träning inför prov 3b (listor, text, tal och index)
+# Prov 5b: listor och index
 
 Här får du träna mer på samma moment som kommer på Prov 3. Fokus ligger på att blanda olika typer av information i listor och att använda `input()` tillsammans med index för att plocka fram rätt information från datorns minne.
 
-### Uppgift 3ba: blandad lista (spelkaraktär)
+---
+
+### Uppgift 1: blandad lista (spelkaraktär)
 
 **Uppgift:** Skapa en lista som innehåller exakt tre saker om en spelkaraktär: Namn (text), Level (heltal) och Styrka 1-10 (heltal). Skriv sedan ut hela listan.
 
@@ -22,7 +24,9 @@ karaktar = ["Super Mario", 99, 8]
 print("Info:", karaktar)
 ```
 
-### Uppgift 3bb: skriva ut specifika delar
+---
+
+### Uppgift 2: skriva ut specifika delar
 
 **Uppgift:** Utgå från listan `artister = ["Taylor Swift", "The Weeknd", "Avicii", "Beyoncé"]`.
 Skriv ut hela listan.
@@ -47,7 +51,9 @@ print("Första:", artister[0])
 print("Sista:", artister[3])
 ```
 
-### Uppgift 3bc: välj fika (input och index)
+---
+
+### Uppgift 3: välj fika (input och index)
 
 **Uppgift:** Skapa en lista med tre sorters fika: `["Kanelbulle", "Kladdkaka", "Dammsugare"]`.
 
@@ -74,7 +80,9 @@ val = int(input("Vad vill du ha (0-2): "))
 print("Du valde:", fika[val])
 ```
 
-### Uppgift 3bd: välj temperatur (tal och input)
+---
+
+### Uppgift 4: välj temperatur (tal och input)
 
 **Uppgift:** Skapa en lista med tre temperaturer (heltal): `[15, 22, 30]`.
 
@@ -98,7 +106,9 @@ val = int(input("Vilken dag (0-2)? "))
 print("Temperatur:", temperaturer[val], "grader")
 ```
 
-### Uppgift 3be: husdjursinfo (blandat val)
+---
+
+### Uppgift 5: husdjursinfo (blandat val)
 
 **Uppgift:** Skapa en lista med info om ett husdjur: `["Hund", 5, "Svart", 12]`.
 (Listan innehåller Art, Ålder, Färg, Vikt).

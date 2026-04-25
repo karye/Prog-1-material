@@ -6,33 +6,7 @@
 
 # Sorterad Provbank – Enklast → Svårast
 
-## Uppgift 1 – God morgon och Hej (superenkel)
-
-**Uppgift:** Skriv först en rad **utanför** loopen: `God morgon`. Starta sedan en `while`‑loop som skriver ordet **Hej** flera gånger. **Ingen** inmatning ska användas här.
-
-**Exempel på körning:**
-
-```
-God morgon
-Hej
-Hej
-Hej
-Hej
-(... fortsätter ...)
-```
-
-**Facit:**
-
-```python
-print("God morgon")
-print("Hej")
-while True:
-    print("Hej")
-```
-
----
-
-## Uppgift 2 – Entrékod (1 Input Text, If-Else)
+## Uppgift 1 – Entrékod (1 Input Text, If-Else)
 
 **Uppgift:** Programmet frågar efter en entrékod och ger besked om tillträde.
 
@@ -62,7 +36,7 @@ else:
 
 ---
 
-## Uppgift 3 – Aviseringar (1 Input Text, If-Else)
+## Uppgift 2 – Aviseringar (1 Input Text, If-Else)
 
 **Uppgift:** Programmet frågar om användaren vill slå på aviseringar (ja/nej) och skriver ett tydligt besked.
 
@@ -92,7 +66,7 @@ else:
 
 ---
 
-## Uppgift 4 – Gästlista (Text, If-Else)
+## Uppgift 3 – Gästlista (Text, If-Else)
 
 **Uppgift:**
 Programmet frågar efter **namn**.
@@ -125,7 +99,7 @@ else:
 
 ---
 
-## Uppgift 5 – Nyhetsbrev (1 Input Text, If-Else)
+## Uppgift 4 – Nyhetsbrev (1 Input Text, If-Else)
 
 **Uppgift:** Programmet frågar om användaren vill prenumerera (ja/nej) och skriver därefter ett tydligt besked om prenumerationen.
 
@@ -155,7 +129,7 @@ else:
 
 ---
 
-## Uppgift 6 – Stad Och Väder (Text, Flera If)
+## Uppgift 5 – Stad Och Väder (Text, Flera If)
 
 **Uppgift:** Fråga efter **stad** och **väder** (t.ex. "sol", "regn").
 
@@ -192,7 +166,7 @@ if stad == "Uppsala":
 
 ---
 
-## Uppgift 7 – Lösenordscheck L1 (1 Input Text, 2 If-Else)
+## Uppgift 6 – Lösenordscheck L1 (1 Input Text, 2 If-Else)
 
 **Uppgift:** Programmet granskar ett lösenord med två separata kontroller utan specialfunktioner:
 
@@ -240,7 +214,7 @@ else:
 
 ---
 
-## Uppgift 8 – Lösenordscheck L2 (1 Input Text, 2 If-Else)
+## Uppgift 7 – Lösenordscheck L2 (1 Input Text, 2 If-Else)
 
 **Uppgift:** Programmet kontrollerar ett lösenord med två separata, enkla kontroller (exakta jämförelser):
 
@@ -287,7 +261,7 @@ else:
 
 ---
 
-## Uppgift 9 – Domänkoll L1 (1 Input Text, 2 If-Else)
+## Uppgift 8 – Domänkoll L1 (1 Input Text, 2 If-Else)
 
 **Uppgift:** Programmet tar emot en **domän** (t.ex. `gmail.com`, `skola.se`) och ger två besked:
 
@@ -334,7 +308,7 @@ else:
 
 ---
 
-## Uppgift 10 – Domänkoll L2 (1 Input Text, 2 If-Else)
+## Uppgift 9 – Domänkoll L2 (1 Input Text, 2 If-Else)
 
 **Uppgift:** Programmet tar emot en domän och ger två enkla besked med exakta jämförelser:
 
@@ -381,7 +355,7 @@ else:
 
 ---
 
-## Uppgift 11 – Supportkategori (Text, If-Elif-Else)
+## Uppgift 10 – Supportkategori (Text, If-Elif-Else)
 
 **Uppgift:**
 Programmet frågar efter **problemtyp** som text: skriv `nät`, `dator` eller `skrivare`.
@@ -435,7 +409,7 @@ else:
 
 ---
 
-## Uppgift 12 – Prioritet (Text, If-Elif-Else)
+## Uppgift 11 – Prioritet (Text, If-Elif-Else)
 
 **Uppgift:** Fråga efter **prioritet**: `hög`, `medel` eller `låg`. Programmet ska skriva **endast en** rad beroende på vad användaren skrev:
 
@@ -478,7 +452,7 @@ elif prio == "låg":
 
 ---
 
-## Uppgift 13 – Biogräns 11 (1 Input Tal, If-Else)
+## Uppgift 12 – Biogräns 11 (1 Input Tal, If-Else)
 
 **Uppgift:** Programmet avgör om en person får se en film med 11-årsgräns utifrån angiven ålder och skriver ett tydligt besked.
 
@@ -506,7 +480,7 @@ else:
 
 ---
 
-## Uppgift 14 – Åldersgräns För Konto (Tal, If-Else)
+## Uppgift 13 – Åldersgräns För Konto (Tal, If-Else)
 
 **Uppgift:**
 Programmet frågar efter **ålder** (heltal).
@@ -541,7 +515,7 @@ else:
 
 ---
 
-## Uppgift 15 – Talgräns 100 (1 Input Tal, If-Else)
+## Uppgift 14 – Talgräns 100 (1 Input Tal, If-Else)
 
 **Uppgift:** Programmet avgör om ett angivet heltal är **större än eller lika med 100** eller **mindre än 100** och skriver ett tydligt besked.
 
@@ -569,7 +543,7 @@ else:
 
 ---
 
-## Uppgift 16 – Poäng Till Betygsbokstav (Tal, If-Elif-Else)
+## Uppgift 15 – Poäng Till Betygsbokstav (Tal, If-Elif-Else)
 
 **Uppgift:**
 Programmet frågar efter **poäng** (0–100, heltal). Skriv ut betyg enligt:
@@ -624,7 +598,7 @@ else:
 
 ---
 
-## Uppgift 17 – Studentrabatt (2 Input Text, 2 If-Else, AND)
+## Uppgift 16 – Studentrabatt (2 Input Text, 2 If-Else, AND)
 
 **Uppgift:** Programmet avgör om en person har rätt till studentrabatt utifrån två svar (student ja/nej och student-ID ja/nej) och ger därefter en tydlig uppföljning.
 
@@ -661,7 +635,7 @@ else:
 
 ---
 
-## Uppgift 18 – Salbehörighet (2 Input Text, 2 If-Else, AND)
+## Uppgift 17 – Salbehörighet (2 Input Text, 2 If-Else, AND)
 
 **Uppgift:** Programmet bedömer tillträde till en sal utifrån om bokning finns och om en lärare är med, och återkopplar med tydliga besked.
 
@@ -694,7 +668,7 @@ if bok == "nej" and lar == "nej":
 
 ---
 
-## Uppgift 19 – Inlogg Grund (Text, Nästade If)
+## Uppgift 18 – Inlogg Grund (Text, Nästade If)
 
 **Uppgift:** Fråga efter **användarnamn** och **kod**. Om användarnamnet är `lisa` ska programmet **därefter** kontrollera koden (`hemlis`).
 
@@ -742,7 +716,7 @@ else:
 
 ---
 
-## Uppgift 20 – Stad Och Väder Plus (Text, Nästade If)
+## Uppgift 19 – Stad Och Väder Plus (Text, Nästade If)
 
 **Uppgift:** Fråga efter **stad** och **väder**. Om staden är `Uppsala`, skriv först `Hälsa Uppsala!` och kontrollera **därefter** vädret:
 
@@ -781,7 +755,7 @@ else:
 
 ---
 
-## Uppgift 21 – Poäng Med Bonus (Tal + Text, Nästade If)
+## Uppgift 20 – Poäng Med Bonus (Tal + Text, Nästade If)
 
 **Uppgift:** Fråga efter **poäng** (heltal) och om **bonus** används (`ja`/`nej`).
 
@@ -821,7 +795,7 @@ else:
 
 ---
 
-## Uppgift 22 – Nätverk: VLAN-Typ (Text, Nästade If)
+## Uppgift 21 – Nätverk: VLAN-Typ (Text, Nästade If)
 
 **Uppgift:** Fråga efter **VLAN-ID** (som text) och **trafiktyp** (`voice` eller `data`).
 
@@ -873,7 +847,7 @@ else:
 
 ---
 
-## Uppgift 23 – Biljettkategori (If-Elif-Else)
+## Uppgift 22 – Biljettkategori (If-Elif-Else)
 
 **Uppgift:** Programmet frågar efter en biljettkategori: `barn`, `ungdom` eller `vuxen`. Skriv ett tydligt besked.
 
@@ -912,7 +886,7 @@ else:
 
 ---
 
-## Uppgift 24 – Temperaturkoll (Tal, If-Elif-Else)
+## Uppgift 23 – Temperaturkoll (Tal, If-Elif-Else)
 
 **Uppgift:** Programmet frågar efter temperatur (heltal). Skriv ett besked:
 
@@ -956,7 +930,7 @@ else:
 
 ---
 
-## Uppgift 25 – Skollunch Val (If-Elif-Elif-Else)
+## Uppgift 24 – Skollunch Val (If-Elif-Elif-Else)
 
 **Uppgift:** Programmet frågar efter kostval: `vegetarisk`, `vegansk`, `kott` eller något annat. Skriv ett besked.
 
@@ -1004,7 +978,7 @@ else:
 
 ---
 
-## Uppgift 26 – Klädråd Efter Temperatur (Tal, If-Elif-Elif-Else)
+## Uppgift 25 – Klädråd Efter Temperatur (Tal, If-Elif-Elif-Else)
 
 **Uppgift:** Programmet frågar efter temperatur (heltal) och ger klädråd:
 
@@ -1058,7 +1032,7 @@ else:
 
 ---
 
-## Uppgift 27 – Transportval (If-Elif-Else)
+## Uppgift 26 – Transportval (If-Elif-Else)
 
 **Uppgift:** Programmet frågar efter färdsätt: `buss`, `tåg` eller `cykel`. Skriv ett besked som inte innehåller ordet från inmatningen.
 
@@ -1097,7 +1071,7 @@ else:
 
 ---
 
-## Uppgift 28 – Supportkanal (If-Elif-Elif-Else)
+## Uppgift 27 – Supportkanal (If-Elif-Elif-Else)
 
 **Uppgift:** Programmet frågar efter supportkanal: `telefon`, `chatt`, `e-post` eller annat. Skriv ett besked utan att upprepa kanalen ordagrant.
 
@@ -1145,7 +1119,7 @@ else:
 
 ---
 
-## Uppgift 29 – Lektionstyp (If-Elif-Else)
+## Uppgift 28 – Lektionstyp (If-Elif-Else)
 
 **Uppgift:** Programmet frågar efter lektionstyp: `teori`, `labb` eller `idrott`. Skriv ett besked utan att upprepa inmatad lektionstyp.
 
@@ -1184,7 +1158,7 @@ else:
 
 ---
 
-## Uppgift 30 – Matallergi (If-Elif-Elif-Else)
+## Uppgift 29 – Matallergi (If-Elif-Elif-Else)
 
 **Uppgift:** Programmet frågar efter allergi: `gluten`, `laktos`, `nötter` eller annat. Skriv en anpassning utan att upprepa inmatat ord.
 
@@ -1231,136 +1205,3 @@ else:
 ```
 
 ---
-
-# Nytt prov – While-loopen (5 uppgifter)
-
-## Uppgift 31 – Statusloop med stopp (superenkel)
-
-**Uppgift:** Skriv ut en statusrad i en loop. Fråga varje varv om programmet ska fortsätta. Om svaret är `n` ska programmet avsluta loopen.
-
-**Exempel på körning:**
-
-```
-Status: wifi anslutet
-Fortsätta? (j/n): j
-Fortsätter...
-Status: wifi anslutet
-Fortsätta? (j/n): n
-Avslutar.
-```
-
----
-
-## Uppgift 32 – IP-eko tills q (eko och break)
-
-**Uppgift:** Fråga om en IP‑adress i en loop och skriv ut vald IP. Avsluta när användaren skriver `q`.
-
-**Exempel på körning:**
-
-```
-Skriv IP (q för att sluta): 192.168.0.10
-Vald IP: 192.168.0.10
-Skriv IP (q för att sluta): 10.0.0.5
-Vald IP: 10.0.0.5
-Skriv IP (q för att sluta): q
-Stänger IP-eko.
-```
-
-**Facit:**
-
-```python
-while True:
-    ip = input("Skriv IP (q för att sluta): ")
-    if ip == "q":
-        print("Stänger IP-eko.")
-        break
-    else:
-        print("Vald IP:", ip)
-```
-
----
-
-## Uppgift 33 – Logg med enter/q (paus eller stoppa)
-
-**Uppgift:** Skriv en loggrad. Fråga direkt efter varje rad: `Enter för ny logg, q för att sluta:`. Fortsätt på enter, avsluta på `q`.
-
-**Exempel på körning (fortsätta, sedan stoppa):**
-
-```
-Logg: nätverk OK
-Enter för ny logg, q för att sluta:
-Fortsätter loggning...
-Logg: nätverk OK
-Enter för ny logg, q för att sluta: q
-Logg stoppad.
-```
-
----
-
-## Uppgift 34 – Enkel meny i loop (1/2/3)
-
-**Uppgift:** Visa en liten meny i en loop. På 1, skriv en IP‑rad. På 2, skriv ett wifi‑namn. På 3, skriv "Hej då!" och avsluta. Annars skriv "Fel val" och visa menyn igen.
-
-**Exempel på körning:**
-
-```
-1. Visa IP
-2. Visa wifi
-3. Avsluta
-Välj: 2
-Wifi: SkolWifi
-1. Visa IP
-2. Visa wifi
-3. Avsluta
-Välj: 1
-IP: 10.0.0.5
-1. Visa IP
-2. Visa wifi
-3. Avsluta
-Välj: 3
-Hej då!
-```
-
-**Facit:**
-
-```python
-while True:
-    print("1. Visa IP")
-    print("2. Visa wifi")
-    print("3. Avsluta")
-    val = input("Välj: ")
-    if val == "1":
-        print("IP: 10.0.0.5")
-    elif val == "2":
-        print("Wifi: SkolWifi")
-    elif val == "3":
-        print("Hej då!")
-        break
-    else:
-        print("Fel val")
-```
-
----
-
-## Uppgift 35 – Startsekvens med avbrott
-
-**Uppgift:** Kör en startsekvens i flera steg inuti en loop. Efter varje steg (eller efter två steg) fråga om start ska avbrytas. Avbryt på `j`. Om alla steg körts utan avbrott: skriv "Start klar" och avsluta.
-
-**Exempel på körning 1 (ingen avbrytning):**
-
-```
-Start: init router
-Avbryta start? (j/n): n
-Start: init wifi
-Avbryta start? (j/n): n
-Start: init brandvägg
-Start klar
-```
-
-**Exempel på körning 2 (avbryts):**
-
-```
-Start: init router
-Avbryta start? (j/n): j
-Start avbruten
-```

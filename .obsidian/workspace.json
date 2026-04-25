@@ -11,10 +11,14 @@
             "id": "5418f10bbb69208a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "K2 - villkor/material-k2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Ny flik"
+              "title": "material-k2"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "K2 - villkor/material-k2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Bakåtlänkar"
+              "title": "Bakåtlänkar för material-k2"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "K2 - villkor/material-k2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Utgående länkar"
+              "title": "Utgående länkar från material-k2"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "K2 - villkor/material-k2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Disposition"
+              "title": "Disposition av material-k2"
             }
           }
         ]
@@ -178,38 +185,38 @@
   },
   "active": "5418f10bbb69208a",
   "lastOpenFiles": [
-    "K4/material-k4-listor.md",
+    "K2 - villkor/material-2-k2.md",
+    "K1 - print & input/träning-inför-prov-1b.md",
+    "K1 - print & input/prov-1c-input-och-output.md",
+    "K1 - print & input/prov-1b-input-och-output.md",
+    "K1 - print & input/träning-inför-prov-1c.md",
+    "K1 - print & input/träning-inför-prov-1a.md",
+    "README.md",
+    "K3 - while-loopar/prov-3c-while-loopar.md",
+    "lathund.md",
+    "Python lathund.md",
+    "K3 - while-loopar/prov-3b-while-loopar.md",
+    "K3 - while-loopar/prov-3a-while-loopar.md",
+    "K5 - listor & index/prov-5a-listor-och-index.md",
+    "K7 - funktioner/träning-inför-prov-7c.md",
+    "K7 - funktioner/träning-inför-prov-7b.md",
+    "K7 - funktioner/träning-inför-prov-7a.md",
+    "K3 - while-loopar/träning-inför-prov-3a.md",
+    "K1 - print & input/prov-1a-input-och-output.md",
     "K7 - funktioner/prov-7c-funktioner.md",
     "K7 - funktioner/prov-7b-funktioner.md",
     "K7 - funktioner/prov-7a-funktioner.md",
+    "K6 - for-loopar & slump/träning-inför-prov-6c.md",
+    "K6 - for-loopar & slump/träning-inför-prov-6b.md",
+    "K5 - listor & index/träning-inför-prov-5c.md",
+    "K4 - listor/träning-inför-prov-4c.md",
+    "K4 - listor/träning-inför-prov-4b.md",
     "K7 - funktioner",
-    "K6 - for-loopar/träning-inför-blandat-listor-loopar-b.md",
-    "K6 - for-loopar/träning-inför-blandat-listor-loopar-a.md",
-    "K6 - for-loopar/prov-blandat-listor-loopar-och-slump.md",
-    "K6 - for-loopar",
-    "K5 - index & random/träning-inför-prov-5b.md",
-    "K5 - index & random/träning-inför-prov-5a.md",
-    "K5 - index & random/prov-5b-listor-och-index.md",
-    "K5 - index & random/prov-5a-listor-och-index.md",
-    "K5 - index & random",
-    "K4 - listor/material-k4-listor.md",
+    "K6 - for-loopar & slump",
+    "K5 - listor & index",
     "K4 - listor",
-    "K3 - while-loopar/prov-3a-while-loopar.md",
-    "K3 - while-loopar/material-k3-while-loopar.md",
     "K3 - while-loopar",
-    "K2 - villkor/material-k2-villkor.md",
     "K2 - villkor",
-    "K1 - print & input/träning-inför-prov-1a.md",
-    "K1 - print & input/prov-1b-input-och-output.md",
-    "K1 - print & input/prov-1a-input-och-output.md",
-    "K1 - print & input/material-k1-input-och-output.md",
-    "K1 - print & input",
-    "K4/prov-4a-listor.md",
-    "K4/Namnlös.md",
-    "K5/träning-inför-prov-5a.md",
-    "blandat/prov-blandat-villkor-och-loopar.md",
-    "blandat/träning-inför-blandat-villkor-och-loopar.md",
-    "K6/träning-inför-blandat-listor-loopar-b.md",
-    "K6/träning-inför-blandat-listor-loopar-a.md"
+    "K1 - print & input"
   ]
 }

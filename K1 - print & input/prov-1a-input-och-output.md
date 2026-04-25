@@ -2,6 +2,8 @@
 
 Detta prov testar dina kunskaper i att skriva ut text med `print()` och att ta emot information från användaren med `input()`.
 
+---
+
 ### Uppgift 1: skriv ut ett meddelande
 
 **Uppgift:** Skriv ett program som skriver ut två rader: först en rubrik och sedan en mening. Du ska bara använda `print()`.

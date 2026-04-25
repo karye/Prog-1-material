@@ -1,4 +1,4 @@
-# Prov 6a: funktioner i Python
+# Prov 7a: funktioner i Python
 
 I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rätt ordning och skicka in information (argument) till dem.
 
@@ -7,6 +7,8 @@ I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rä
 * Använd korrekta namn på funktioner.
 * Kom ihåg att definiera funktioner med `def`.
 * Var noga med indentering (indrag).
+
+---
 
 ### Uppgift 1: skapa en enkel funktion och testa
 
@@ -26,6 +28,8 @@ def halsa():
 
 halsa()
 ```
+
+---
 
 ### Uppgift 2: använda en funktion flera gånger
 
@@ -49,6 +53,8 @@ hurra()
 hurra()
 hurra()
 ```
+
+---
 
 ### Uppgift 3: flera funktioner i rätt följd
 
@@ -85,6 +91,8 @@ spela()
 avsluta()
 ```
 
+---
+
 ### Uppgift 4: funktion med ett namn (argument)
 
 **Uppgift:** Skapa en funktion som heter `personlig_halsning(namn)`. Funktionen ska ta emot **ett argument** (ett namn) och skriva ut en trevlig hälsning där namnet är med. Anropa sedan funktionen och skicka in ett valfritt namn i parentesen.
@@ -103,6 +111,8 @@ def personlig_halsning(namn):
 
 personlig_halsning("Kalle")
 ```
+
+---
 
 ### Uppgift 5: mata monstret (två argument och beräkning)
 

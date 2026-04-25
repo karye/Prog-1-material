@@ -1,6 +1,8 @@
-# Prov 3a: listor och index
+# Prov 5a: listor och index
 
 Detta prov testar dina kunskaper i att skapa listor, blanda olika typer av information och använda index för att skriva ut specifika delar (bland annat med hjälp av inmatning från användaren).
+
+---
 
 ### Uppgift 1: blandad lista (film)
 
@@ -21,6 +23,8 @@ print("=== Filmkväll ===")
 film = ["Lejonkungen", 1994, 5]
 print("Filminfo:", film)
 ```
+
+---
 
 ### Uppgift 2: skriva ut specifika delar
 
@@ -46,6 +50,8 @@ print("Alla löpare:", lopare)
 print("Första:", lopare[0])
 print("Sista:", lopare[3])
 ```
+
+---
 
 ### Uppgift 3: välj snacks (input och index)
 
@@ -74,6 +80,8 @@ val = int(input("Vad vill du ha (0-2): "))
 print("Du valde:", snacks[val])
 ```
 
+---
+
 ### Uppgift 4: välj hastighet (tal och input)
 
 **Uppgift:** Skapa en lista med tre hastighetsbegränsningar (heltal): `[30, 50, 70]`.
@@ -97,6 +105,8 @@ skyltar = [30, 50, 70]
 val = int(input("Vilken skylt (0-2)? "))
 print("Maxfart:", skyltar[val], "km/h")
 ```
+
+---
 
 ### Uppgift 5: mobilinfo (blandat val)
 

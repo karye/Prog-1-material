@@ -1,4 +1,4 @@
-# Prov 6c: funktioner i Python
+# Prov 7c: funktioner i Python
 
 I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rätt ordning och skicka in information (argument) till dem.
 
@@ -7,6 +7,8 @@ I det här provet ska du visa att du kan skapa egna funktioner, anropa dem i rä
 * Använd korrekta namn på funktioner.
 * Kom ihåg att definiera funktioner med `def`.
 * Var noga med indentering (indrag).
+
+---
 
 ### Uppgift 1: skapa en enkel funktion och testa
 
@@ -26,6 +28,8 @@ def hejaklack():
 
 hejaklack()
 ```
+
+---
 
 ### Uppgift 2: använda en funktion flera gånger
 
@@ -49,6 +53,8 @@ trollformel()
 trollformel()
 trollformel()
 ```
+
+---
 
 ### Uppgift 3: flera funktioner i rätt följd
 
@@ -85,6 +91,8 @@ ata_frukost()
 ga_till_skolan()
 ```
 
+---
+
 ### Uppgift 4: funktion med en spelare (argument)
 
 **Uppgift:** Skapa en funktion som heter `valkommen_spelare(namn)`. Funktionen ska ta emot **ett argument** (ett namn) och skriva ut en mening som välkomnar spelaren till nivå 1. Anropa sedan funktionen och skicka in ett valfritt namn i parentesen.
@@ -103,6 +111,8 @@ def valkommen_spelare(namn):
 
 valkommen_spelare("Luigi")
 ```
+
+---
 
 ### Uppgift 5: funktion för biobesök (två argument)
 

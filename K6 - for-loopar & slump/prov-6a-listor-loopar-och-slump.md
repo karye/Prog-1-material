@@ -1,6 +1,8 @@
-# Prov 5a: Listor, loopar och slump
+# Prov 6a: for-loopar och slump
 
 I det här provet testas din förmåga att använda for-loopar med listor, bygga listor dynamiskt, samt använda modulen `random` för att slumpa värden. Temat för provet är **mat och inköpslistor**.
+
+---
 
 ### Uppgift 1: Skriva ut matvaror
 
@@ -21,6 +23,8 @@ for mat in matvaror:
     print("Gott:", mat)
 ```
 
+---
+
 ### Uppgift 2: Räkna måltider
 
 **Uppgift:** Använd en `for`-loop och funktionen `range()` för att skriva ut siffrorna 1 till 5. Framför varje siffra ska texten "Måltid" skrivas ut.
@@ -39,6 +43,8 @@ Måltid 5
 for i in range(1, 6):
     print("Måltid", i)
 ```
+
+---
 
 ### Uppgift 3: Lägga till i kundvagnen
 
@@ -64,6 +70,8 @@ kundvagn.append(vara2)
 print(f"Du har nu {len(kundvagn)} varor i kundvagnen.")
 ```
 
+---
+
 ### Uppgift 4: Dagens middag
 
 **Uppgift:** Importera modulen `random`. Skapa en lista med tre olika middagsrätter. Använd funktionen `random.choice()` för att låta datorn slumpa fram en av rätterna. Skriv sedan ut resultatet.
@@ -82,6 +90,8 @@ vald_middag = random.choice(middagar)
 
 print("Idag blir det:", vald_middag)
 ```
+
+---
 
 ### Uppgift 5: Obegränsad inköpslista
 
