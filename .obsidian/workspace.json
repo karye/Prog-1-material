@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K2 - villkor/material-k2.md",
+                "file": "Kursprov/kursprov-skattjakten.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "material-k2"
+              "title": "kursprov-skattjakten"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5
+    "width": 290.5
   },
   "right": {
     "id": "ccd1361d2076be5b",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K2 - villkor/material-k2.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Bakåtlänkar för material-k2"
+              "title": "Bakåtlänkar för README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K2 - villkor/material-k2.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Utgående länkar från material-k2"
+              "title": "Utgående länkar från README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "K2 - villkor/material-k2.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Disposition av material-k2"
+              "title": "Disposition av README"
             }
           }
         ]
@@ -185,13 +185,17 @@
   },
   "active": "5418f10bbb69208a",
   "lastOpenFiles": [
+    "Kursprov/kursprov-karaktarsbyggaren.md",
+    "Kursprov/kursprov-pizzabestallningen.md",
+    "README.md",
+    "Kursprov/kursprov-skattjakten.md",
+    "K2 - villkor/material-k2.md",
     "K2 - villkor/material-2-k2.md",
     "K1 - print & input/träning-inför-prov-1b.md",
     "K1 - print & input/prov-1c-input-och-output.md",
     "K1 - print & input/prov-1b-input-och-output.md",
     "K1 - print & input/träning-inför-prov-1c.md",
     "K1 - print & input/träning-inför-prov-1a.md",
-    "README.md",
     "K3 - while-loopar/prov-3c-while-loopar.md",
     "lathund.md",
     "Python lathund.md",
@@ -207,10 +211,6 @@
     "K7 - funktioner/prov-7b-funktioner.md",
     "K7 - funktioner/prov-7a-funktioner.md",
     "K6 - for-loopar & slump/träning-inför-prov-6c.md",
-    "K6 - for-loopar & slump/träning-inför-prov-6b.md",
-    "K5 - listor & index/träning-inför-prov-5c.md",
-    "K4 - listor/träning-inför-prov-4c.md",
-    "K4 - listor/träning-inför-prov-4b.md",
     "K7 - funktioner",
     "K6 - for-loopar & slump",
     "K5 - listor & index",
