@@ -28,6 +28,25 @@ Välj plats (0-3): 3
 Du söker i Grottan... SKATTEN! Grattis!
 ```
 
+**Facit:**
+```python
+platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+print("=== SKATTJAKTEN ===")
+print("Platser:", platser)
+
+val = int(input("Välj plats (0-3): "))
+if val == 0:
+    print("Du söker i Pyramiden... bara sand här.")
+elif val == 1:
+    print("Du söker i Vulkanen... bara lava här.")
+elif val == 2:
+    print("Du söker i Djungeln... bara träd här.")
+elif val == 3:
+    print("Du söker i Grottan... SKATTEN! Grattis!")
+else:
+    print("Ogiltigt index!")
+```
+
 ---
 
 ### Uppgift 2: Meny för upptäcktsresande (4p)
@@ -63,6 +82,39 @@ Du söker i Grottan... SKATTEN! Grattis!
 3. Avsluta
 Val: 3
 Jakten avslutad!
+```
+
+**Facit:**
+```python
+platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+print("=== SKATTJAKTEN ===")
+print("Platser:", platser)
+
+while True:
+    print()
+    print("1. Sök plats")
+    print("2. Visa alla platser")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj plats (0-3): "))
+        if index == 0:
+            print("Du söker i Pyramiden... bara sand här.")
+        elif index == 1:
+            print("Du söker i Vulkanen... bara lava här.")
+        elif index == 2:
+            print("Du söker i Djungeln... bara träd här.")
+        elif index == 3:
+            print("Du söker i Grottan... SKATTEN! Grattis!")
+        else:
+            print("Ogiltigt index!")
+    elif val == "2":
+        print(platser)
+    elif val == "3":
+        print("Jakten avslutad!")
+        break
+    else:
+        print("Ogiltigt val.")
 ```
 
 ---
@@ -104,6 +156,38 @@ Ingen skatt på Vulkanen
 Val: 1
 Välj plats (0-3): 0
 SKATTEN! Grattis!
+```
+
+**Facit:**
+```python
+import random
+
+platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+skatt_plats = random.randint(0, 3)
+
+print("=== SKATTJAKTEN ===")
+print("Skatten är gömd... lycka till!")
+
+while True:
+    print()
+    print("1. Sök plats")
+    print("2. Visa skattkarta")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj plats (0-3): "))
+        if index == skatt_plats:
+            print("SKATTEN! Grattis!")
+        else:
+            print("Ingen skatt på", platser[index])
+    elif val == "2":
+        for i in range(4):
+            print("Plats", i, ":", platser[i])
+    elif val == "3":
+        print("Jakten avslutad!")
+        break
+    else:
+        print("Ogiltigt val.")
 ```
 
 ---
@@ -149,6 +233,45 @@ Försök kvar: 0
 Slut på försök! Spelet över.
 ```
 
+**Facit:**
+```python
+import random
+
+platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+skatt_plats = random.randint(0, 3)
+forsok_kvar = 3
+
+print("=== SKATTJAKTEN ===")
+print("Skatten är gömd... lycka till!")
+
+while True:
+    print()
+    print("1. Sök plats")
+    print("2. Visa skattkarta")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj plats (0-3): "))
+        if index == skatt_plats:
+            print("SKATTEN! Grattis!")
+            break
+        else:
+            print("Ingen skatt på", platser[index])
+            forsok_kvar = forsok_kvar - 1
+            print("Försök kvar:", forsok_kvar)
+            if forsok_kvar == 0:
+                print("Slut på försök! Spelet över.")
+                break
+    elif val == "2":
+        for i in range(4):
+            print("Plats", i, ":", platser[i])
+    elif val == "3":
+        print("Jakten avslutad!")
+        break
+    else:
+        print("Ogiltigt val.")
+```
+
 ---
 
 ### Uppgift 5: Paketera spelet (4p)
@@ -182,4 +305,44 @@ Välj plats (0-3): 0
 SKATTEN! Grattis!
 ```
 
+**Facit:**
+```python
+def skattjakt(spelare, max_forsok):
+    import random
 
+    platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+    skatt_plats = random.randint(0, 3)
+    forsok_kvar = max_forsok
+
+    print(f"Välkommen {spelare}! Du har {max_forsok} försök.")
+    print("Skatten är gömd... lycka till!")
+
+    while True:
+        print()
+        print("1. Sök plats")
+        print("2. Visa skattkarta")
+        print("3. Avsluta")
+        val = input("Val: ")
+        if val == "1":
+            index = int(input("Välj plats (0-3): "))
+            if index == skatt_plats:
+                print("SKATTEN! Grattis!")
+                break
+            else:
+                print("Ingen skatt på", platser[index])
+                forsok_kvar = forsok_kvar - 1
+                print("Försök kvar:", forsok_kvar)
+                if forsok_kvar == 0:
+                    print("Slut på försök! Spelet över.")
+                    break
+        elif val == "2":
+            for i in range(4):
+                print("Plats", i, ":", platser[i])
+        elif val == "3":
+            print("Jakten avslutad!")
+            break
+        else:
+            print("Ogiltigt val.")
+
+skattjakt("Äventyraren", 2)
+```

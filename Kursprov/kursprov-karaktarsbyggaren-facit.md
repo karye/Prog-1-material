@@ -20,6 +20,25 @@ Välj karaktär (0-3): 1
 Magikern | Styrka: 8 | Hälsa: 60
 ```
 
+**Facit:**
+```python
+hjaltar = ["Krigaren", "Magikern", "Tjuven", "Bothågen"]
+print("=== KARAKTÄRSBYGGAREN ===")
+print("Hjältar:", hjaltar)
+
+val = int(input("Välj karaktär (0-3): "))
+if val == 0:
+    print("Krigaren | Styrka: 10 | Hälsa: 100")
+elif val == 1:
+    print("Magikern | Styrka: 8 | Hälsa: 60")
+elif val == 2:
+    print("Tjuven | Styrka: 6 | Hälsa: 80")
+elif val == 3:
+    print("Bothågen | Styrka: 12 | Hälsa: 50")
+else:
+    print("Ogiltigt val!")
+```
+
 ---
 
 ### Uppgift 2: Karaktärsmeny (4p)
@@ -57,6 +76,39 @@ Val: 3
 Spelet avslutas.
 ```
 
+**Facit:**
+```python
+hjaltar = ["Krigaren", "Magikern", "Tjuven", "Bothågen"]
+print("=== KARAKTÄRSBYGGAREN ===")
+print("Hjältar:", hjaltar)
+
+while True:
+    print()
+    print("1. Inspektera karaktär")
+    print("2. Visa alla karaktärer")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj karaktär (0-3): "))
+        if index == 0:
+            print("Krigaren | Styrka: 10 | Hälsa: 100")
+        elif index == 1:
+            print("Magikern | Styrka: 8 | Hälsa: 60")
+        elif index == 2:
+            print("Tjuven | Styrka: 6 | Hälsa: 80")
+        elif index == 3:
+            print("Bothågen | Styrka: 12 | Hälsa: 50")
+        else:
+            print("Ogiltigt val!")
+    elif val == "2":
+        print(hjaltar)
+    elif val == "3":
+        print("Spelet avslutas.")
+        break
+    else:
+        print("Ogiltigt val.")
+```
+
 ---
 
 ### Uppgift 3: Bossen uppenbarar sig (4p)
@@ -89,6 +141,37 @@ Hjälte 3: Bothågen
 Val: 1
 Välj karaktär (0-3): 0
 Du valde Krigaren.
+```
+
+**Facit:**
+```python
+import random
+
+hjaltar = ["Krigaren", "Magikern", "Tjuven", "Bothågen"]
+bossar = ["Draken", "Jätten", "Demonen", "Skuggan"]
+boss_namn = bossar[random.randint(0, 3)]
+boss_styrka = random.randint(5, 15)
+
+print("=== KARAKTÄRSBYGGAREN ===")
+print("En boss har uppenbarat sig!")
+
+while True:
+    print()
+    print("1. Inspektera karaktär")
+    print("2. Visa alla karaktärer")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj karaktär (0-3): "))
+        print("Du valde", hjaltar[index] + ".")
+    elif val == "2":
+        for i in range(4):
+            print("Hjälte", i, ":", hjaltar[i])
+    elif val == "3":
+        print("Spelet avslutas.")
+        break
+    else:
+        print("Ogiltigt val.")
 ```
 
 ---
@@ -126,6 +209,49 @@ Du valde Krigaren (styrka 10).
 Du besegrade bossen! Det var Draken med styrka 9.
 ```
 
+**Facit:**
+```python
+import random
+
+hjaltar = ["Krigaren", "Magikern", "Tjuven", "Bothågen"]
+styrkor = [10, 8, 6, 12]
+bossar = ["Draken", "Jätten", "Demonen", "Skuggan"]
+boss_namn = bossar[random.randint(0, 3)]
+boss_styrka = random.randint(5, 15)
+halsa = 100
+
+print("=== KARAKTÄRSBYGGAREN ===")
+print("En boss har uppenbarat sig!")
+print("Din hälsa:", halsa)
+
+while True:
+    print()
+    print("1. Strid med karaktär")
+    print("2. Visa alla karaktärer")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Välj karaktär (0-3): "))
+        print("Du valde", hjaltar[index], "(styrka", styrkor[index], end=").\n")
+        if styrkor[index] >= boss_styrka:
+            print("Du besegrade bossen! Det var", boss_namn, "med styrka", boss_styrka, end=".\n")
+            break
+        else:
+            halsa = halsa - 20
+            print("Du förlorade! Hälsa kvar:", halsa)
+            if halsa <= 0:
+                print("Du är besegrad! Bossen var", boss_namn, end=".\n")
+                break
+    elif val == "2":
+        for i in range(4):
+            print("Hjälte", i, ":", hjaltar[i])
+    elif val == "3":
+        print("Spelet avslutas.")
+        break
+    else:
+        print("Ogiltigt val.")
+```
+
 ---
 
 ### Uppgift 5: Paketera spelet (4p)
@@ -161,4 +287,47 @@ Du valde Krigaren (styrka 10).
 Du besegrade bossen! Det var Skuggan med styrka 8.
 ```
 
+**Facit:**
+```python
+def karaktarsval(spelare, max_strid):
+    import random
 
+    hjaltar = ["Krigaren", "Magikern", "Tjuven", "Bothågen"]
+    styrkor = [10, 8, 6, 12]
+    bossar = ["Draken", "Jätten", "Demonen", "Skuggan"]
+    boss_namn = bossar[random.randint(0, 3)]
+    boss_styrka = random.randint(5, 15)
+    strider_kvar = max_strid
+
+    print(f"Välkommen {spelare}! Du får {max_strid} stridsförsök.")
+    print("En boss har uppenbarat sig!")
+
+    while True:
+        print()
+        print("1. Strid med karaktär")
+        print("2. Visa alla karaktärer")
+        print("3. Avsluta")
+        val = input("Val: ")
+        if val == "1":
+            index = int(input("Välj karaktär (0-3): "))
+            print("Du valde", hjaltar[index], "(styrka", styrkor[index], end=").\n")
+            if styrkor[index] >= boss_styrka:
+                print("Du besegrade bossen! Det var", boss_namn, "med styrka", boss_styrka, end=".\n")
+                break
+            else:
+                strider_kvar = strider_kvar - 1
+                print("Du förlorade! Strid", max_strid - strider_kvar, "av", max_strid, end=".\n")
+                if strider_kvar == 0:
+                    print("Slut på strider! Bossen var", boss_namn, end=".\n")
+                    break
+        elif val == "2":
+            for i in range(4):
+                print("Hjälte", i, ":", hjaltar[i])
+        elif val == "3":
+            print("Spelet avslutas.")
+            break
+        else:
+            print("Ogiltigt val.")
+
+karaktarsval("Zäta", 3)
+```

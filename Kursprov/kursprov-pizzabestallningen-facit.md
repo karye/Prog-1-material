@@ -20,6 +20,25 @@ Vilken pizza (0-3)? 2
 Kebab kostar 105 kr.
 ```
 
+**Facit:**
+```python
+pizzor = ["Margherita", "Hawaii", "Kebab", "Vesuvio"]
+print("=== PIZZERIA KODEN ===")
+print("Meny:", pizzor)
+
+val = int(input("Vilken pizza (0-3)? "))
+if val == 0:
+    print("Margherita kostar 85 kr.")
+elif val == 1:
+    print("Hawaii kostar 95 kr.")
+elif val == 2:
+    print("Kebab kostar 105 kr.")
+elif val == 3:
+    print("Vesuvio kostar 110 kr.")
+else:
+    print("Ogiltigt val!")
+```
+
 ---
 
 ### Uppgift 2: Beställningsdisk (4p)
@@ -55,6 +74,39 @@ Margherita kostar 85 kr.
 3. Avsluta
 Val: 3
 Tack för ditt besök!
+```
+
+**Facit:**
+```python
+pizzor = ["Margherita", "Hawaii", "Kebab", "Vesuvio"]
+print("=== PIZZERIA KODEN ===")
+print("Meny:", pizzor)
+
+while True:
+    print()
+    print("1. Se pris")
+    print("2. Visa menyn")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Vilken pizza (0-3)? "))
+        if index == 0:
+            print("Margherita kostar 85 kr.")
+        elif index == 1:
+            print("Hawaii kostar 95 kr.")
+        elif index == 2:
+            print("Kebab kostar 105 kr.")
+        elif index == 3:
+            print("Vesuvio kostar 110 kr.")
+        else:
+            print("Ogiltigt val!")
+    elif val == "2":
+        print(pizzor)
+    elif val == "3":
+        print("Tack för ditt besök!")
+        break
+    else:
+        print("Ogiltigt val.")
 ```
 
 ---
@@ -96,6 +148,38 @@ Kebab kostar 95 kr (ordinarie)
 Val: 1
 Vilken pizza (0-3)? 0
 Margherita är dagens pizza! 69 kr.
+```
+
+**Facit:**
+```python
+import random
+
+pizzor = ["Margherita", "Hawaii", "Kebab", "Vesuvio"]
+dagens = random.randint(0, 3)
+
+print("=== PIZZERIA KODEN ===")
+print("Dagens pizza är hemlig... extrapris 69 kr!")
+
+while True:
+    print()
+    print("1. Se pris")
+    print("2. Visa menyn")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Vilken pizza (0-3)? "))
+        if index == dagens:
+            print(pizzor[index], "är dagens pizza! 69 kr.")
+        else:
+            print(pizzor[index], "kostar 95 kr (ordinarie)")
+    elif val == "2":
+        for i in range(4):
+            print("Pizza", i, ":", pizzor[i])
+    elif val == "3":
+        print("Tack för ditt besök!")
+        break
+    else:
+        print("Ogiltigt val.")
 ```
 
 ---
@@ -142,6 +226,46 @@ Vesuvio kostar 95 kr (ordinarie)
 Pengarna är slut!
 ```
 
+**Facit:**
+```python
+import random
+
+pizzor = ["Margherita", "Hawaii", "Kebab", "Vesuvio"]
+dagens = random.randint(0, 3)
+budget = 200
+
+print("=== PIZZERIA KODEN ===")
+print("Dagens pizza är hemlig... extrapris 69 kr!")
+print("Din budget:", budget, "kr")
+
+while True:
+    print()
+    print("1. Se pris")
+    print("2. Visa menyn")
+    print("3. Avsluta")
+    val = input("Val: ")
+    if val == "1":
+        index = int(input("Vilken pizza (0-3)? "))
+        if index == dagens:
+            print(pizzor[index], "är dagens pizza! 69 kr.")
+            budget = budget - 69
+        else:
+            print(pizzor[index], "kostar 95 kr (ordinarie)")
+            budget = budget - 95
+        if budget <= 0:
+            print("Pengarna är slut!")
+            break
+        print("Kvar av budgeten:", budget, "kr")
+    elif val == "2":
+        for i in range(4):
+            print("Pizza", i, ":", pizzor[i])
+    elif val == "3":
+        print("Tack för ditt besök! Du hade", budget, "kr kvar.")
+        break
+    else:
+        print("Ogiltigt val.")
+```
+
 ---
 
 ### Uppgift 5: Paketera pizzerian (4p)
@@ -174,4 +298,43 @@ Val: 3
 Tack för ditt besök! Du hade 81 kr kvar.
 ```
 
+**Facit:**
+```python
+def pizzeria(kund, budget):
+    import random
 
+    pizzor = ["Margherita", "Hawaii", "Kebab", "Vesuvio"]
+    dagens = random.randint(0, 3)
+
+    print(f"Välkommen {kund}! Din budget är {budget} kr.")
+    print("Dagens pizza är hemlig... extrapris 69 kr!")
+
+    while True:
+        print()
+        print("1. Se pris")
+        print("2. Visa menyn")
+        print("3. Avsluta")
+        val = input("Val: ")
+        if val == "1":
+            index = int(input("Vilken pizza (0-3)? "))
+            if index == dagens:
+                print(pizzor[index], "är dagens pizza! 69 kr.")
+                budget = budget - 69
+            else:
+                print(pizzor[index], "kostar 95 kr (ordinarie)")
+                budget = budget - 95
+            if budget <= 0:
+                print("Pengarna är slut!")
+                break
+            print("Kvar av budgeten:", budget, "kr")
+        elif val == "2":
+            for i in range(4):
+                print("Pizza", i, ":", pizzor[i])
+        elif val == "3":
+            print(f"Tack för ditt besök! Du hade {budget} kr kvar.")
+            break
+        else:
+            print("Ogiltigt val.")
+
+pizzeria("Ali", 150)
+```
