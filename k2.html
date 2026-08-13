@@ -45,6 +45,11 @@ if färg == "röd":
     print("Du valde rött!")
 ```
 
+```text
+Välj färg: röd
+Du valde rött!
+```
+
 - `if` = **om**
 - `färg == "röd"` – jämför: är det rött?
 - **Kolon** efter villkoret
@@ -64,6 +69,11 @@ else:
     print("Du valde inte rött.")
 ```
 
+```text
+Välj färg: blå
+Du valde inte rött.
+```
+
 - `else` = **annars** – körs om villkoret inte stämmer
 - Programmet tar alltid **en av vägarna**
 
@@ -72,6 +82,7 @@ else:
 # elif – fler val i rad
 
 ```python
+färg = input("Välj färg: ")
 if färg == "röd":
     print("Rött!")
 elif färg == "blå":
@@ -80,6 +91,11 @@ elif färg == "grön":
     print("Grönt!")
 else:
     print("Okänd färg")
+```
+
+```text
+Välj färg: grön
+Grönt!
 ```
 
 - `elif` = **annars om** – testas bara om de tidigare inte stämde
@@ -102,6 +118,11 @@ if ålder >= 15:
     print("Du får se filmen!")
 ```
 
+```text
+Hur gammal är du? 16
+Du får se filmen!
+```
+
 ---
 
 # Kombinera villkor
@@ -110,8 +131,16 @@ if ålder >= 15:
 - `or` = **eller** – minst en stämmer
 
 ```python
+ålder = int(input("Ålder: "))
+land = input("Land: ")
 if ålder >= 18 and land == "Sverige":
     print("Du får rösta i svenska val.")
+```
+
+```text
+Ålder: 19
+Land: Sverige
+Du får rösta i svenska val.
 ```
 
 .tip[Läs villkoret högt: "om ålder är 18 eller mer *och* land är Sverige".]

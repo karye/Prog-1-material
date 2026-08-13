@@ -42,6 +42,11 @@ body.k8    { --accent: var(--k8); }
   line-height: 1.5;
 }
 
+/* Tätare slides (mycket kod + körexempel) */
+.remark-slide-content.smaller {
+  font-size: 1.15em;
+}
+
 h1 {
   color: var(--accent);
   font-size: 1.9em;

@@ -44,6 +44,13 @@ while True:
     print("Hej igen!")
 ```
 
+```text
+Hej igen!
+Hej igen!
+Hej igen!
+...
+```
+
 - `while` = **medan**
 - `True` = **alltid sant** – så loopen körs för evigt
 - Indrag = koden som upprepas varje varv
@@ -60,6 +67,10 @@ while True:
     break
 ```
 
+```text
+Hej igen!
+```
+
 - `break` = **bryt** – avslutar loopen direkt
 - Utan `break` snurrar loopen för evigt
 - Detta program kör alltså bara **en gång**
@@ -72,6 +83,14 @@ while True:
 while True:
     svar = input("Vill du fortsätta? ")
     print("Kul att du är med!")
+```
+
+```text
+Vill du fortsätta? ja
+Kul att du är med!
+Vill du fortsätta? ja
+Kul att du är med!
+...
 ```
 
 - Varje varv frågar programmet på nytt
@@ -89,10 +108,18 @@ while True:
     print("Du skrev:", svar)
 ```
 
+```text
+Skriv 'sluta' för att avsluta: hej
+Du skrev: hej
+Skriv 'sluta' för att avsluta: sluta
+```
+
 - Användaren styr när loopen tar slut – genom att skriva **nyckelordet**
 - `if` + `break` = stoppknappen i loopen
 
 ---
+
+class: smaller
 
 # Meny – allt tillsammans
 
@@ -108,6 +135,18 @@ while True:
         break
     else:
         print("Ogiltigt val")
+```
+
+```text
+=== Meny ===
+1. Hälsning
+2. Avsluta
+Välj: 1
+Hej på dig!
+=== Meny ===
+1. Hälsning
+2. Avsluta
+Välj: 2
 ```
 
 Menyn visas om och om igen – tills användaren väljer **2**.
