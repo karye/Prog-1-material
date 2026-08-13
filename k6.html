@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K6 – for-loopar &amp; slump</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k6">
+<textarea id="source">
+
+class: center, middle, title
+
+# K6 – for-loopar & slump
+
+### Gå igenom listan – eller låt datorn välja
+
+.el[Kapitel 6 · for · range · random]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K6 – for-loopar & slump]
+
+---
+
+# Vad är poängen med kapitlet?
+
+Att **gå igenom en lista automatiskt** – utan att skriva ut varje element för hand:
+
+- "Skriv ut alla matvaror"
+- "Räkna 1 till 5"
+- "Slumpa fram en middagsrätt"
+
+En `for`-loop tar varje element i tur och ordning och gör samma sak med det.
+
+---
+
+# for – gå igenom en lista
+
+```python
+matvaror = ["Korv", "Lax", "Pasta"]
+for vara in matvaror:
+    print("Gott:", vara)
+```
+
+```text
+Gott: Korv
+Gott: Lax
+Gott: Pasta
+```
+
+- `for vara in matvaror:` = för varje vara i listan
+- Indrag = det som upprepas per vara
+- `vara` får varje elements värde i tur och ordning
+
+---
+
+# range() – räkna siffror
+
+```python
+for i in range(1, 6):
+    print("Måltid", i)
+```
+
+```text
+Måltid 1
+Måltid 2
+Måltid 3
+Måltid 4
+Måltid 5
+```
+
+- `range(1, 6)` = 1, 2, 3, 4, 5
+- `i` = talet i varje varv
+
+.tip[`range(1, 6)` slutar på 5 – range slutar alltid ett steg före sista talet!]
+
+---
+
+# range med steg
+
+```python
+for i in range(2, 10, 2):
+    print("Tal", i)
+```
+
+```text
+Tal 2
+Tal 4
+Tal 6
+Tal 8
+```
+
+Det tredje talet i `range` = **steglängden** – hur mycket hoppas mellan varje varv.
+
+---
+
+# Bygga lista + räkna med len
+
+```python
+kundvagn = []
+kundvagn.append(input("Vara 1: "))
+kundvagn.append(input("Vara 2: "))
+print(f"Du har {len(kundvagn)} varor i vagnen.")
+```
+
+```text
+Vara 1: Mjölk
+Vara 2: Bröd
+Du har 2 varor i vagnen.
+```
+
+Här blandas listor (K4) med f-strängar: `append` bygger listan, `len` räknar den.
+
+---
+
+# random.choice – slumpa fram
+
+```python
+import random
+
+middagar = ["Pannkakor", "Spaghetti", "Korv med bröd"]
+vald = random.choice(middagar)
+print("Idag blir det:", vald)
+```
+
+```text
+Idag blir det: Pannkakor
+```
+
+- `import random` först – hämtar slumpmodulen
+- `random.choice(lista)` – väljer ett slumpmässigt element
+
+.tip[Resultatet varierar varje gång du kör programmet!]
+
+---
+
+class: smaller
+
+# "klar"-loopen – allt tillsammans
+
+```python
+inkopslista = []
+while True:
+    svar = input("Lägg till vara (eller 'klar'): ")
+    if svar == "klar":
+        break
+    inkopslista.append(svar)
+print("Din inköpslista:", inkopslista)
+```
+
+```text
+Lägg till vara (eller 'klar'): Äpple
+Lägg till vara (eller 'klar'): Banan
+Lägg till vara (eller 'klar'): klar
+Din inköpslista: ['Äpple', 'Banan']
+```
+
+`while True` + `break` (K3) + listor (K4) – nu kan du kombinera!
+
+---
+
+# Vanliga fallgropar
+
+- Glömt **kolon** eller **indrag** i for-loopen
+- Tror `range(1, 6)` ger 1 till 6 – den slutar på 5
+- Använder fel variabelnamn inne i loopen
+- Glömt `import random` → felmeddelande
+- `append` lägger till i listan – `=` ersätter i stället
+
+---
+
+# Provet – vad som testas
+
+1. `for`-loop över lista (skriv ut varje element)
+2. `for` + `range()` – siffror 1 till 5
+3. `input()` → `append` + `len()` + f-sträng
+4. `import random` + `random.choice()`
+5. `while True` + `break` + `append` – "klar"-listan
+
+Teman: **mat & inköp, städer & resor, djur & natur** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `for x in lista:` – gör samma sak med varje element
+- `range(1, 6)` = 1, 2, 3, 4, 5 – slutar före sista
+- `import random` + `random.choice(lista)` – slumpa
+- `append` + `len` + f-sträng – bygga och räkna listor
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K7 – funktioner
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K7 · funktioner](k7.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
