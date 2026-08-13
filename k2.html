@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K2 – villkor</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k2">
+<textarea id="source">
+
+class: center, middle, title
+
+# K2 – villkor
+
+### Program som fattar beslut
+
+.el[Kapitel 2 · if · elif · else]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K2 – villkor]
+
+---
+
+# Vad är poängen med kapitlet?
+
+Program som **fattar beslut**:
+
+- "Om du skriver *ja*, kör vi – annars avslutar vi"
+- "Är du under 13? Då får du inte se filmen"
+- "Beroende på vilken färg du väljer – olika svar"
+
+Hittills har programmet bara kört rakt igenom. Nu får det **vägval**!
+
+---
+
+# if – om det stämmer, kör koden
+
+```python
+färg = input("Välj färg: ")
+if färg == "röd":
+    print("Du valde rött!")
+```
+
+- `if` = **om**
+- `färg == "röd"` – jämför: är det rött?
+- **Kolon** efter villkoret
+- **Indrag** = koden som körs om det stämmer
+
+.tip[Indraget är viktigt! Python läser av indraget för att veta vilken kod som hör till villkoret.]
+
+---
+
+# else – vad som händer annars
+
+```python
+färg = input("Välj färg: ")
+if färg == "röd":
+    print("Du valde rött!")
+else:
+    print("Du valde inte rött.")
+```
+
+- `else` = **annars** – körs om villkoret inte stämmer
+- Programmet tar alltid **en av vägarna**
+
+---
+
+# elif – fler val i rad
+
+```python
+if färg == "röd":
+    print("Rött!")
+elif färg == "blå":
+    print("Blått!")
+elif färg == "grön":
+    print("Grönt!")
+else:
+    print("Okänd färg")
+```
+
+- `elif` = **annars om** – testas bara om de tidigare inte stämde
+- `else` sist – fångar allt annat
+
+---
+
+# Jämföra tal
+
+| Tecken | Betydelse |
+|---|---|
+| `==` | är lika med |
+| `>` / `<` | större än / mindre än |
+| `>=` / `<=` | större eller lika / mindre eller lika |
+| `!=` | är inte lika med |
+
+```python
+ålder = int(input("Hur gammal är du? "))
+if ålder >= 15:
+    print("Du får se filmen!")
+```
+
+---
+
+# Kombinera villkor
+
+- `and` = **och** – båda måste stämma
+- `or` = **eller** – minst en stämmer
+
+```python
+if ålder >= 18 and land == "Sverige":
+    print("Du får rösta i svenska val.")
+```
+
+.tip[Läs villkoret högt: "om ålder är 18 eller mer *och* land är Sverige".]
+
+---
+
+# Vanliga fallgropar
+
+- `=` sparar ett värde – `==` jämför! Det vanligaste felet
+- Glömt **kolonet** efter `if`-raden
+- Glömt **indraget** – eller blandat mellanslag och tab
+- `else` kan bara komma sist – och bara en gång
+
+.tip[Felaktigt indrag ger felmeddelande från Python. Kolla radnumret det pekar på.]
+
+---
+
+# Provet – vad som testas
+
+1. `if` / `else` med text
+2. `if` / `else` med tal
+3. `if` / `elif` / `else` – tre val
+4. Fyra val i rad
+5. **Nästade `if`** – if innanför if
+
+Teman: **djur, väder, bio** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `if` = om, `elif` = annars om, `else` = annars
+- Kolon + indrag markerar koden som hör till villkoret
+- `==` jämför, `=` sparar
+- `and` / `or` kombinerar villkor
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K3 – while-loopar
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K3 · while-loopar](k3.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
