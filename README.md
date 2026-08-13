@@ -146,6 +146,28 @@ K8-proven kombinerar moment från K1–K7 i ett större sammanhang. Tre av prove
 
 ---
 
+## 📽️ Presentationer
+
+Interaktiva kursgenomgångar byggda med **remark.js** – publicerade på GitHub Pages.
+
+| Fil | Innehåll |
+|---|---|
+| `index.html` | Introduktion till kursen och Python |
+| `k1.html` | K1 – print & input |
+| `k2.html` | K2 – villkor |
+| `k3.html` | K3 – while-loopar |
+| `k4.html` | K4 – listor |
+| `k5.html` | K5 – listor & index |
+| `k6.html` | K6 – for-loopar & slump |
+| `k7.html` | K7 – funktioner |
+| `k8.html` | K8 – problemlösning |
+
+- Navigera med **piltangenterna** (← →), tryck **Esc** för översikt
+- Live: https://karye.github.io/Prog-1-material/
+- `assets/` innehåller gemensam design (`style.css`), presentationsmotorn (`remark.min.js`) och Python-loggan (`python-logo.svg`)
+
+---
+
 ## 📄 Övriga filer
 
 | Fil | Beskrivning |
