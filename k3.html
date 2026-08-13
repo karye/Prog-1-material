@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K3 – while-loopar</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k3">
+<textarea id="source">
+
+class: center, middle, title
+
+# K3 – while-loopar
+
+### Upprepa tills du säger stopp
+
+.el[Kapitel 3 · while True · break · meny]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K3 – while-loopar]
+
+---
+
+# Vad är poängen med kapitlet?
+
+Att **upprepa kod** – utan att kopiera den tusen gånger:
+
+- En meny som visas om och om igen
+- Fråga användaren tills svaret är rätt
+- Spel som snurrar tills spelaren vill sluta
+
+Utan loopar skulle programmen bli oändligt långa. Med en loop blir de **korta och smarta**.
+
+---
+
+# while True – kör om och om igen
+
+```python
+while True:
+    print("Hej igen!")
+```
+
+- `while` = **medan**
+- `True` = **alltid sant** – så loopen körs för evigt
+- Indrag = koden som upprepas varje varv
+
+.tip[Tryck **Ctrl+C** i Thonny för att stoppa en loop som aldrig slutar.]
+
+---
+
+# break – avsluta loopen
+
+```python
+while True:
+    print("Hej igen!")
+    break
+```
+
+- `break` = **bryt** – avslutar loopen direkt
+- Utan `break` snurrar loopen för evigt
+- Detta program kör alltså bara **en gång**
+
+---
+
+# input i loopen – fråga varje varv
+
+```python
+while True:
+    svar = input("Vill du fortsätta? ")
+    print("Kul att du är med!")
+```
+
+- Varje varv frågar programmet på nytt
+- Här finns ingen `break` – det frågar för evigt
+
+---
+
+# break på nyckelord
+
+```python
+while True:
+    svar = input("Skriv 'sluta' för att avsluta: ")
+    if svar == "sluta":
+        break
+    print("Du skrev:", svar)
+```
+
+- Användaren styr när loopen tar slut – genom att skriva **nyckelordet**
+- `if` + `break` = stoppknappen i loopen
+
+---
+
+# Meny – allt tillsammans
+
+```python
+while True:
+    print("=== Meny ===")
+    print("1. Hälsning")
+    print("2. Avsluta")
+    val = input("Välj: ")
+    if val == "1":
+        print("Hej på dig!")
+    elif val == "2":
+        break
+    else:
+        print("Ogiltigt val")
+```
+
+Menyn visas om och om igen – tills användaren väljer **2**.
+
+---
+
+# Vanliga fallgropar
+
+- **Oändlig loop** – glömt `break` → programmet hänger sig (Ctrl+C fixar)
+- Koden efter `break` i loopen körs aldrig
+- Glömt indrag → koden hamnar utanför loopen
+- `break` utanför en loop → felmeddelande
+
+.tip[Kolla alltid: finns det en väg ut ur loopen?]
+
+---
+
+# Provet – vad som testas
+
+1. `while True` + `print` – ingen input
+2. `input()` i loopen – ingen `break`
+3. `input()` i loopen + svar
+4. `break` på nyckelord (t.ex. "sluta")
+5. **Meny** med `if` / `elif` / `else` + `break`
+
+Teman: **skolmat, restaurang, spel** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `while True:` upprepar – tills `break` stoppar
+- `break` = avsluta loopen direkt
+- `input()` i loopen = fråga om igen varje varv
+- Meny = loop + `if` / `elif` / `else` + `break`
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K4 – listor
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K4 · listor](k4.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
