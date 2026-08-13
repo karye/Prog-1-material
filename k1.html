@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K1 – print &amp; input</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k1">
+<textarea id="source">
+
+class: center, middle, title
+
+# K1 – print & input
+
+### Prata med ditt program
+
+.el[Kapitel 1 · print() · input() · variabler]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K1 – print & input]
+
+---
+
+# Vad är poängen med kapitlet?
+
+Programmet ska kunna **prata med dig**:
+
+- **Skriva ut** saker på skärmen – `print()`
+- **Fråga dig** saker och lyssna på svaret – `input()`
+- **Komma ihåg** dina svar – variabler
+
+I slutet av kapitlet kan du bygga till exempel ett rymdbrev som hälsar på dig – med ditt namn!
+
+---
+
+# print() – skriva ut text
+
+Allt inom citattecken skrivs ut:
+
+```python
+print("Hej, världen!")
+print("Välkommen ombord!")
+```
+
+```text
+Hej, världen!
+Välkommen ombord!
+```
+
+.tip[Citattecken talar om för Python: "det här är text". Utan dem blir det fel.]
+
+---
+
+# input() – fråga användaren
+
+```python
+namn = input("Vad heter du? ")
+```
+
+- Texten i parentesen visas för användaren
+- Programmet **väntar** på att någon skriver något
+- Svaret sparas i variabeln `namn`
+
+---
+
+# Variabler – komma ihåg saker
+
+```python
+namn = input("Vad heter du? ")
+print("Hej", namn)
+```
+
+- `=` betyder "spara i" – `namn` får det som skrivs in
+- Sedan kan du använda `namn` om och om igen
+
+---
+
+# print med flera saker
+
+Två sätt att skriva ut text tillsammans med en variabel:
+
+```python
+print("Hej", namn)        # komma = mellanslag
+print(f"Hej {namn}!")     # f-sträng
+```
+
+```text
+Hej Sara
+Hej Sara!
+```
+
+.tip[F-strängen är en mall: `f"Hej {namn}!"` – `{namn}` byts ut mot värdet.]
+
+---
+
+# Vanliga fallgropar
+
+- Glömt citattecken: `print(Hej)` → fel
+- Glömt parentesen: `print("Hej"` → fel
+- Felstavat variabelnamn: `print(nam)` när variabeln heter `namn` → fel
+- `input()` ger **alltid text** – även om man skriver in en siffra
+
+.tip[Läs felmeddelandet! Python brukar peka på exakt rad där felet finns.]
+
+---
+
+# Provet – vad som testas
+
+5 uppgifter, från lätt till svårare:
+
+1. `print()` – skriv ut två rader
+2. `print()` – skriv ut en liten rapport
+3. `input()` + `print(..., variabel)`
+4. Två `input()` + en f-sträng
+5. Tre `input()` + tre f-strängar – ett litet brev
+
+Teman: **rymd, café, träning** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `print("text")` – skriv ut text
+- `namn = input("fråga")` – fråga och spara svaret
+- `print("Hej", namn)` eller `print(f"Hej {namn}!")` – kombinera
+- Variabler kommer ihåg dina svar
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K2 – villkor
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K2 · villkor](k2.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
