@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K8 – problemlösning</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k8">
+<textarea id="source">
+
+class: center, middle, title
+
+# K8 – problemlösning
+
+### Slutprov – allt tillsammans
+
+.el[Kapitel 8 · K1–K7 kombinerat]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K8 – problemlösning]
+
+---
+
+# Vad är poängen med kapitlet?
+
+K8 är **slutprovet** – nu kombinerar du allt du lärt dig:
+
+- Uppgifterna säger **vad** programmet ska göra
+- Du bestämmer **hur** du löser det med kod
+- Större program – med meny, loopar och val
+
+Det här är inget nytt moment – det är **hela kursen på en gång**.
+
+---
+
+# Din verktygslåda (K1–K7)
+
+| Kapitel | Verktyg |
+|---|---|
+| K1 | `print`, `input`, variabler, f-strängar |
+| K2 | `if` / `elif` / `else` |
+| K3 | `while True` + `break` |
+| K4 | listor, `append`, `len` |
+| K5 | index – `lista[0]`, `lista[1]` |
+| K6 | `for` + `range` + `random.choice` |
+| K7 | egna funktioner med `def` |
+
+Allt detta används i kursprovet!
+
+---
+
+# Kursprovet – tre teman
+
+| Prov | Tema |
+|---|---|
+| Skattjakten | Skatt gömd på en av fyra platser |
+| Pizzabeställningen | Meny, beställning och budget |
+| Karaktärsbyggaren | Välj karaktär, möt en slumpmässig boss |
+
+Siktar du högre? Då finns även **Bokhandeln (C-nivå)** och **Rymdstationen (A-nivå)**.
+
+---
+
+# Exempel: hitta skatten
+
+class: smaller
+
+```python
+platser = ["Pyramiden", "Vulkanen", "Djungeln", "Grottan"]
+print("=== SKATTJAKTEN ===")
+print("Platser:", platser)
+val = int(input("Välj plats (0-3): "))
+print("Du söker i", platser[val], "...")
+if val == 3:
+    print("SKATTEN! Grattis!")
+else:
+    print("Bara sten och sand...")
+```
+
+```text
+=== SKATTJAKTEN ===
+Platser: ['Pyramiden', 'Vulkanen', 'Djungeln', 'Grottan']
+Välj plats (0-3): 3
+Du söker i Grottan ...
+SKATTEN! Grattis!
+```
+
+Lista + index + `int(input())` + villkor – ett litet helt program!
+
+---
+
+# Så löser du en problemuppgift
+
+1. **Läs uppgiften noga** – vad ska programmet göra exakt?
+2. **Dela upp** – vilka delmoment behövs? (meny, lista, val…)
+3. **Bygg stegvis** – börja med en del, testa, lägg till nästa
+4. **Testa ofta** – kör programmet hela tiden
+5. **Jämför med exempelkörningen** – matchar ditt program?
+
+.tip[Exempelkörningen är kontraktet: ser ditt program likadant ut, är det rätt.]
+
+---
+
+# Provets upplägg
+
+- **5 uppgifter** – totalt 20 poäng
+- Svårigheten ökar – senare uppgifter bygger på tidigare
+- Du får veta **vad** programmet ska göra – inte **hur**
+- **Lathunden får användas!**
+
+---
+
+# Sammanfattning
+
+- K8 = slutprov – allt från K1–K7
+- Uppgifterna beskriver **vad** – du bestämmer **hur**
+- Dela upp problemet i små delar
+- Testa ofta och jämför med exempelkörningen
+- Du kan mer än du tror!
+
+---
+
+class: center, middle, section
+
+# Lycka till på kursprovet!
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[← K7 · funktioner](k7.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
