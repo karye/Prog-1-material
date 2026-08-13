@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K4 – listor</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k4">
+<textarea id="source">
+
+class: center, middle, title
+
+# K4 – listor
+
+### Samla flera saker på en gång
+
+.el[Kapitel 4 · [ ] · append · len]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K4 – listor]
+
+---
+
+# Vad är poängen med kapitlet?
+
+Att samla flera värden i **en** variabel:
+
+- Tre filmer till filmkvällen
+- Fyra poäng i en match
+- En att-göra-lista som växer
+
+Utan listor skulle du behöva en variabel för varje sak. Med en lista håller du ihop allt – och kan skicka vidare hela listan på en gång.
+
+---
+
+# Skapa och skriva ut en lista
+
+```python
+filmer = ["Star Wars", "Inception", "Shrek"]
+print(filmer)
+print(len(filmer))
+```
+
+```text
+['Star Wars', 'Inception', 'Shrek']
+3
+```
+
+- Hakparenteser `[ ]` = lista
+- Komma mellan varje värde
+- Text inom citattecken
+- `len(lista)` = antalet saker i listan
+
+---
+
+# Lista med tal
+
+```python
+poäng = [10, 20, 15, 8]
+print(poäng)
+```
+
+```text
+[10, 20, 15, 8]
+```
+
+Tal skrivs **utan** citattecken – annars blir de text.
+
+---
+
+# Blandad lista
+
+```python
+kort = ["Spader", 7, "Ruter", 12]
+print(kort)
+```
+
+```text
+['Spader', 7, 'Ruter', 12]
+```
+
+En lista kan blanda **text och tal** hur som helst.
+
+---
+
+# Bygga en lista med input
+
+```python
+lista = []
+lista.append(input("Filmen 1: "))
+lista.append(input("Filmen 2: "))
+print(lista)
+```
+
+```text
+Filmen 1: Shrek
+Filmen 2: Inception
+['Shrek', 'Inception']
+```
+
+- `lista = []` – börja med en tom lista
+- `append(x)` – lägg till x sist i listan
+
+---
+
+# Tal i listan – glöm inte int()
+
+```python
+lista = []
+lista.append(int(input("Tal 1: ")))
+lista.append(int(input("Tal 2: ")))
+print(lista)
+```
+
+```text
+Tal 1: 5
+Tal 2: 8
+[5, 8]
+```
+
+Utan `int()` skulle listan bli `['5', '8']` – text!
+
+.tip[`int(input(...))` = läs in texten och gör om den till ett tal.]
+
+---
+
+# Vanliga fallgropar
+
+- Glömda hakparenteser – `["a", "b"]` är listan
+- Glömt citattecken på text i listan
+- Komma mellan elementen – annars blir det ett enda värde
+- Glömt `int()` → talen blir text i listan
+- `append` lägger till i slutet – `=` ersätter i stället
+
+---
+
+# Provet – vad som testas
+
+1. Lista med 3 strängar + `print`
+2. Lista med 4 tal + `print`
+3. Blandad lista + `print`
+4. Två `input()` → lista med `append`
+5. `input()` + `int(input())` → lista + f-sträng
+
+Teman: **film, sport, mat** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `[ ]` = lista – komma mellan värdena
+- Text med citattecken, tal utan
+- `lista.append(x)` – lägg till
+- `len(lista)` – antal saker
+- `int(input())` när värdena ska vara tal
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K5 – listor & index
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K5 · listor & index](k5.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
