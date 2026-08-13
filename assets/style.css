@@ -95,6 +95,16 @@ li { margin: 0.35em 0; }
 .remark-slide-content pre:has(code.python) .remark-code {
   color: #0f172a;
 }
+
+/* Kod och körexempel bredvid varandra när de ligger i par */
+.remark-slide-content:has(pre + pre) pre {
+  display: inline-block;
+  width: 48.5%;
+  margin: 0.4em 0 0 1%;
+  vertical-align: top;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+}
 .remark-inline-code {
   background: #eef2f7;
   color: #0f172a;
