@@ -10,16 +10,28 @@ body {
   margin: 0;
 }
 
+/* ---- Kapitelfärger – en källa till sanning för alla presentationer ---- */
+:root {
+  --k1: #2563eb;   /* print & input   – blå   */
+  --k2: #e11d48;   /* villkor         – röd   */
+  --k3: #059669;   /* while-loopar    – grön  */
+  --k4: #7c3aed;   /* listor          – lila  */
+  --k5: #ea580c;   /* listor & index  – orange */
+  --k6: #0891b2;   /* for & slump     – cyan  */
+  --k7: #b45309;   /* funktioner      – amber */
+  --k8: #4f46e5;   /* problemlösning  – indigo */
+}
+
 /* ---- Accentfärg per kapitel ---- */
 body.intro { --accent: #334155; }   /* introduktion    – slate  */
-body.k1    { --accent: #2563eb; }   /* print & input   – blå   */
-body.k2    { --accent: #e11d48; }   /* villkor         – röd   */
-body.k3    { --accent: #059669; }   /* while-loopar    – grön  */
-body.k4    { --accent: #7c3aed; }   /* listor          – lila  */
-body.k5    { --accent: #ea580c; }   /* listor & index  – orange */
-body.k6    { --accent: #0891b2; }   /* for & slump     – cyan  */
-body.k7    { --accent: #b45309; }   /* funktioner      – amber */
-body.k8    { --accent: #4f46e5; }   /* problemlösning  – indigo */
+body.k1    { --accent: var(--k1); }
+body.k2    { --accent: var(--k2); }
+body.k3    { --accent: var(--k3); }
+body.k4    { --accent: var(--k4); }
+body.k5    { --accent: var(--k5); }
+body.k6    { --accent: var(--k6); }
+body.k7    { --accent: var(--k7); }
+body.k8    { --accent: var(--k8); }
 
 /* ---- Sliden i stort ---- */
 .remark-slide-content {
@@ -167,6 +179,24 @@ li { margin: 0.35em 0; }
   padding: 0.3em 0.6em;
   border-bottom: 1px solid #e2e8f0;
 }
+
+/* Färgkodade kapitelrader i introns översiktstabell */
+.remark-slide-content table tr.k1 td:first-child { border-left: 4px solid var(--k1); }
+.remark-slide-content table tr.k1 td:first-child strong { color: var(--k1); }
+.remark-slide-content table tr.k2 td:first-child { border-left: 4px solid var(--k2); }
+.remark-slide-content table tr.k2 td:first-child strong { color: var(--k2); }
+.remark-slide-content table tr.k3 td:first-child { border-left: 4px solid var(--k3); }
+.remark-slide-content table tr.k3 td:first-child strong { color: var(--k3); }
+.remark-slide-content table tr.k4 td:first-child { border-left: 4px solid var(--k4); }
+.remark-slide-content table tr.k4 td:first-child strong { color: var(--k4); }
+.remark-slide-content table tr.k5 td:first-child { border-left: 4px solid var(--k5); }
+.remark-slide-content table tr.k5 td:first-child strong { color: var(--k5); }
+.remark-slide-content table tr.k6 td:first-child { border-left: 4px solid var(--k6); }
+.remark-slide-content table tr.k6 td:first-child strong { color: var(--k6); }
+.remark-slide-content table tr.k7 td:first-child { border-left: 4px solid var(--k7); }
+.remark-slide-content table tr.k7 td:first-child strong { color: var(--k7); }
+.remark-slide-content table tr.k8 td:first-child { border-left: 4px solid var(--k8); }
+.remark-slide-content table tr.k8 td:first-child strong { color: var(--k8); }
 
 /* ---- Kapitellänkar (knappar) ---- */
 .chapter-links a {
