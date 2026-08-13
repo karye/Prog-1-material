@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K5 – listor &amp; index</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k5">
+<textarea id="source">
+
+class: center, middle, title
+
+# K5 – listor & index
+
+### Hämta ut enskilda värden
+
+.el[Kapitel 5 · index · [0] · [1] · [2]]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K5 – listor & index]
+
+---
+
+# Vad är poängen med kapitlet?
+
+En lista är **ordnad** – varje sak har en plats, ett **index**.
+
+- `filmer[0]` – första filmen
+- `filmer[1]` – andra filmen
+- `filmer[2]` – tredje filmen
+
+Med index kan du plocka ut **precis den** film du vill ha.
+
+---
+
+# Index börjar på 0!
+
+```python
+filmer = ["Star Wars", "Inception", "Shrek"]
+print(filmer[0])
+print(filmer[1])
+print(filmer[2])
+```
+
+```text
+Star Wars
+Inception
+Shrek
+```
+
+.tip[Datorn räknar från **0**, inte 1 – det är det vanligaste nybörjarfelet!]
+
+---
+
+# Första och sista i en given lista
+
+```python
+lopare = ["Usain Bolt", "Jesse Owens", "Carl Lewis", "Florence Griffith"]
+print("Alla:", lopare)
+print("Första:", lopare[0])
+print("Sista:", lopare[3])
+```
+
+```text
+Alla: ['Usain Bolt', 'Jesse Owens', 'Carl Lewis', 'Florence Griffith']
+Första: Usain Bolt
+Sista: Florence Griffith
+```
+
+4 löpare → index 0, 1, 2, 3. Sista ligger på index 3.
+
+---
+
+# Välj med input()
+
+```python
+snacks = ["Chips", "Popcorn", "Choklad"]
+val = int(input("Vilken (0-2)? "))
+print("Du får:", snacks[val])
+```
+
+```text
+Vilken (0-2)? 1
+Du får: Popcorn
+```
+
+Användarens svar blir **indexet** – därför behövs `int()`.
+
+---
+
+# Tal-lista + enhet
+
+```python
+skyltar = [30, 50, 70]
+val = int(input("Vilken skylt (0-2)? "))
+print("Maxfart:", skyltar[val], "km/h")
+```
+
+```text
+Vilken skylt (0-2)? 2
+Maxfart: 70 km/h
+```
+
+Listan kan innehålla tal – och du kan skriva ut en enhet efteråt.
+
+---
+
+# Vanliga fallgropar
+
+- Index börjar på **0** – `filmer[1]` är den *andra* filmen
+- För högt index → **IndexError** – programmet kraschar
+- Glömt `int()` på input → fel när svaret ska bli index
+- Tror att `lista[4]` finns i en lista med 4 saker – det finns bara index 0–3
+
+.tip[Kraschar programmet? Kolla att indexet är lägre än antalet saker.]
+
+---
+
+# Provet – vad som testas
+
+1. Blandad lista (text + tal) + `print` hela
+2. Given lista: hela + `[0]` + `[sista]`
+3. Lista + `input()` → välj element
+4. Lista med tal + `input()` → välj + enhet (t.ex. "km/h")
+5. Längre lista (4 el.), val 0–3 + f-sträng
+
+Teman: **film & sport, spel & musik, resor** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- Index = platsnummer – börjar på **0**
+- `lista[0]` = första, `lista[len(lista) - 1]` = sista
+- `int(input())` när svaret ska bli ett index
+- För högt index = **IndexError** – kolla antalet saker
+
+---
+
+class: center, middle, section
+
+# Nästa kapitel: K6 – for-loopar & slump
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K6 · for-loopar & slump](k6.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
