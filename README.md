@@ -4,7 +4,13 @@ Prov och träningsuppgifter för kursen **Programmering 1** på gymnasienivå.
 Målgrupp: nybörjare på el-programmet, 17 år.
 
 Upplägget är att stegvis gå igenom Python och kontrollera varje avsnitt med ett prov.  
-Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativversionerna har identisk struktur men olika teman, för omprov eller parallella grupper.
+Varje avsnitt har **prov på tre nivåer**:
+
+- **a/b/c – E-nivå:** 5 uppgifter med facit. Alternativversionerna har identisk struktur men olika teman — för omprov eller parallella grupper.
+- **d – C-nivå:** 3 öppnare uppgifter, totalt 20 poäng. Eleven får veta *vad* programmet ska göra, inte *hur*.
+- **e – A-nivå:** 2 uppgifter med fri design, totalt 20 poäng. En problembeskrivning — resten är upp till eleven.
+
+Därutöver finns **3 träningsfiler** (a/b/c) per avsnitt.
 
 ---
 
@@ -19,6 +25,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `K5 - listor & index` | K5 | Index, blandade typer, `int(input())` |
 | `K6 - for-loopar & slump` | K6 | `for`-loop, `range()`, `random.choice()` |
 | `K7 - funktioner` | K7 | `def`, anrop, argument, beräkning |
+| `blandat` | Spänner över flera avsnitt | K2 + K3 + K6 |
+| `K8 - problemlösning` | K8 | Allt från K1–K7 kombinerat |
 
 ---
 
@@ -30,6 +38,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-1a-input-och-output.md` | Prov | Rymd |
 | `prov-1b-input-och-output.md` | Prov | Café |
 | `prov-1c-input-och-output.md` | Prov | Träning |
+| `prov-1d-input-och-output.md` | Prov | C-nivå |
+| `prov-1e-input-och-output.md` | Prov | A-nivå |
 | `träning-inför-prov-1a.md` | Träning | Café |
 | `träning-inför-prov-1b.md` | Träning | Skolan |
 | `träning-inför-prov-1c.md` | Träning | Musik |
@@ -41,6 +51,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-2a-villkor.md` | Prov | Djur |
 | `prov-2b-villkor.md` | Prov | Väder |
 | `prov-2c-villkor.md` | Prov | Bio |
+| `prov-2d-villkor.md` | Prov | C-nivå |
+| `prov-2e-villkor.md` | Prov | A-nivå |
 | `träning-inför-prov-2a.md` | Träning | Mat & restaurang |
 | `träning-inför-prov-2b.md` | Träning | Sport |
 | `träning-inför-prov-2c.md` | Träning | Teknik & mobiler |
@@ -53,6 +65,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-3a-while-loopar.md` | Prov | Skolmat |
 | `prov-3b-while-loopar.md` | Prov | Restaurang |
 | `prov-3c-while-loopar.md` | Prov | Spel |
+| `prov-3d-while-loopar.md` | Prov | C-nivå |
+| `prov-3e-while-loopar.md` | Prov | A-nivå |
 | `träning-inför-prov-3a.md` | Träning | Djurparken |
 | `träning-inför-prov-3b.md` | Träning | Butik |
 | `träning-inför-prov-3c.md` | Träning | Skola |
@@ -65,6 +79,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-4a-listor.md` | Prov | Film |
 | `prov-4b-listor.md` | Prov | Sport |
 | `prov-4c-listor.md` | Prov | Mat |
+| `prov-4d-listor.md` | Prov | C-nivå |
+| `prov-4e-listor.md` | Prov | A-nivå |
 | `träning-inför-prov-4a.md` | Träning | Musik |
 | `träning-inför-prov-4b.md` | Träning | Husdjur |
 | `träning-inför-prov-4c.md` | Träning | Resor |
@@ -76,6 +92,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-5a-listor-och-index.md` | Prov | Film & sport |
 | `prov-5b-listor-och-index.md` | Prov | Spel & musik |
 | `prov-5c-listor-och-index.md` | Prov | Resor |
+| `prov-5d-listor-och-index.md` | Prov | C-nivå |
+| `prov-5e-listor-och-index.md` | Prov | A-nivå |
 | `träning-inför-prov-5a.md` | Träning | Film & sport |
 | `träning-inför-prov-5b.md` | Träning | Äventyr |
 | `träning-inför-prov-5c.md` | Träning | Musik |
@@ -86,6 +104,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-6a-listor-loopar-och-slump.md` | Prov | Mat & inköp |
 | `prov-6b-for-loopar.md` | Prov | Städer & resor |
 | `prov-6c-for-loopar.md` | Prov | Djur & natur |
+| `prov-6d-for-loopar.md` | Prov | C-nivå |
+| `prov-6e-for-loopar.md` | Prov | A-nivå |
 | `träning-inför-prov-6b.md` | Träning | Mat & recept |
 | `träning-inför-prov-6c.md` | Träning | Sport |
 | `träning-inför-blandat-listor-loopar-a.md` | Träning (extra) | Mat |
@@ -97,6 +117,8 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 | `prov-7a-funktioner.md` | Prov | Spel & monster |
 | `prov-7b-funktioner.md` | Prov | Bakning |
 | `prov-7c-funktioner.md` | Prov | Morgonrutin |
+| `prov-7d-funktioner.md` | Prov | C-nivå |
+| `prov-7e-funktioner.md` | Prov | A-nivå |
 | `träning-inför-prov-7a.md` | Träning | Café & fika |
 | `träning-inför-prov-7b.md` | Träning | Rymd |
 | `träning-inför-prov-7c.md` | Träning | Natur & utflykt |
@@ -106,6 +128,21 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 |---|---|---|
 | `prov-blandat-villkor-och-loopar.md` | K2 + K3 + K6 | Prov |
 | `träning-inför-blandat-villkor-och-loopar.md` | K2 + K3 + K6 | Träning |
+
+### K8 - problemlösning — slutprov över hela kursen
+
+K8-proven kombinerar moment från K1–K7 i ett större sammanhang. Tre av proven finns i två versioner: elevversion (utan facit) och facit-version.
+
+| Fil | Typ | Tema |
+|---|---|---|
+| `kursprov-skattjakten.md` | Kursprov | Skatt gömd på en av fyra platser, begränsat antal försök |
+| `kursprov-skattjakten-facit.md` | Facit | – |
+| `kursprov-pizzabestallningen.md` | Kursprov | Pizzeria: meny, beställning och budget |
+| `kursprov-pizzabestallningen-facit.md` | Facit | – |
+| `kursprov-karaktarsbyggaren.md` | Kursprov | Spel: välj karaktär, möt en slumpmässig boss |
+| `kursprov-karaktarsbyggaren-facit.md` | Facit | – |
+| `kursprov-bokhandeln-C-niva.md` | Kursprov (C-nivå) | Bokhandel: bläddra, söka och handla med budget |
+| `kursprov-rymdstationen-A-niva.md` | Kursprov (A-nivå) | Rymdstationssimulator: besättning, resurser och uppdrag |
 
 ---
 
@@ -125,6 +162,7 @@ Varje avsnitt har **3 prov** (a/b/c) och **3 träningsfiler** — alternativvers
 - **Facit synligt.** Eleverna lär sig genom att jämföra sitt svar med facit.
 - **Gradvis svårighetsökning.** Uppgift 1 är alltid enklast. Uppgift 5 kombinerar momentet med tidigare kunskaper. F-strängar används endast i uppgift 5.
 - **Alternativversioner (a/b/c).** Identisk struktur, olika tema — möjliggör omprov utan att uppgifter sprids.
+- **Nivåanpassade prov (d/e).** C-nivåproven kräver självständigt byggande, A-nivåproven fri design — för elever som siktar högre.
 
 ---
 
@@ -160,6 +198,8 @@ Varje prov har 5 uppgifter. Varje uppgift har alltid tre delar:
 | **K6** | `for x in lista: print(...)` | `for i in range(...)` | `for`-loop + mening per element | `for i in range(...)` + beräkning | `random.choice()` + f-sträng |
 | **K7** | `def f()` + anrop × 1 | `def f()` + anrop × 3 | 3 funktioner i ordning | `def f(x)` + argument | `def f(a, b)` + beräkning + f-sträng |
 
+> Tabellen beskriver a/b/c-proven (E-nivå). d-proven (C-nivå) har 3 uppgifter och e-proven (A-nivå) har 2 uppgifter med friare lösning.
+
 ---
 
 ## ✅ Checklista för nytt prov
@@ -170,5 +210,5 @@ Varje prov har 5 uppgifter. Varje uppgift har alltid tre delar:
 - [ ] Ett tema genom hela provet
 - [ ] F-sträng endast i uppgift 5
 - [ ] `---` separator före varje uppgift
-- [ ] Filnamn: `prov-[K-nummer][a/b/c]-[moment].md`
+- [ ] Filnamn: `prov-[K-nummer][a/b/c/d/e]-[moment].md`
 - [ ] Tillhörande träningsfil med samma struktur, nytt tema

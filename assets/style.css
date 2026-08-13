@@ -1,0 +1,157 @@
+/* ==========================================================
+   Prog 1 – gemensam design för kursens presentationer
+   Alla presentationer (index + k1–k8) delar denna stil.
+   Accentfärgen per kapitel sätts på <body class="kX">.
+   ========================================================== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+/* ---- Accentfärg per kapitel ---- */
+body.intro { --accent: #334155; }   /* introduktion    – slate  */
+body.k1    { --accent: #2563eb; }   /* print & input   – blå   */
+body.k2    { --accent: #e11d48; }   /* villkor         – röd   */
+body.k3    { --accent: #059669; }   /* while-loopar    – grön  */
+body.k4    { --accent: #7c3aed; }   /* listor          – lila  */
+body.k5    { --accent: #ea580c; }   /* listor & index  – orange */
+body.k6    { --accent: #0891b2; }   /* for & slump     – cyan  */
+body.k7    { --accent: #b45309; }   /* funktioner      – amber */
+body.k8    { --accent: #4f46e5; }   /* problemlösning  – indigo */
+
+/* ---- Sliden i stort ---- */
+.remark-slide-content {
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 1.5em;
+  padding: 2.4em 3.2em;
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--accent);
+  font-size: 1.9em;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; }
+
+strong { color: var(--accent); }
+a { color: var(--accent); }
+
+ul { margin: 0.4em 0; }
+li { margin: 0.35em 0; }
+
+/* ---- Kod ---- */
+.remark-code {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 10px;
+  padding: 0.9em 1.1em;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+.remark-inline-code {
+  background: #eef2f7;
+  color: #0f172a;
+  border-radius: 5px;
+  padding: 0.05em 0.35em;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.85em;
+}
+
+/* ---- Titelslide och sektionsdelare ---- */
+.remark-slide-content.title,
+.remark-slide-content.section {
+  background: var(--accent);
+  color: #ffffff;
+}
+.remark-slide-content.title h1,
+.remark-slide-content.section h1 {
+  color: #ffffff;
+  font-size: 2.4em;
+}
+.remark-slide-content.title h3,
+.remark-slide-content.section h3 {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: normal;
+}
+.remark-slide-content.title .el,
+.remark-slide-content.section .el {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 1.6em;
+}
+
+/* ---- Accentlinje längst ner på vanliga slides ---- */
+.remark-slide-content:not(.title):not(.section)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--accent);
+}
+
+/* ---- Sidfot och sidnummer ---- */
+.footer {
+  position: absolute;
+  bottom: 1.1em;
+  left: 3.2em;
+  font-size: 0.55em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.remark-slide-number {
+  bottom: 1.1em;
+  right: 2.6em;
+  font-size: 0.55em;
+  color: #94a3b8;
+  opacity: 1;
+}
+
+/* ---- Tipsruta ---- */
+.tip {
+  background: #f8fafc;
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  margin: 0.8em 0;
+}
+
+/* ---- Tabeller ---- */
+.remark-slide-content table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8em;
+}
+.remark-slide-content th {
+  text-align: left;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 0.3em 0.6em;
+}
+.remark-slide-content td {
+  padding: 0.3em 0.6em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ---- Kapitellänkar (knappar) ---- */
+.chapter-links a {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.35em 0.8em;
+  border-radius: 8px;
+  margin: 0.2em 0.15em;
+  font-size: 0.75em;
+}
