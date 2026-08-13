@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K7 – funktioner</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="k7">
+<textarea id="source">
+
+class: center, middle, title
+
+# K7 – funktioner
+
+### Bygg egna byggblock
+
+.el[Kapitel 7 · def · anrop · argument · return]
+
+---
+
+layout: true
+
+.footer[Programmering 1 · K7 – funktioner]
+
+---
+
+# Vad är poängen med kapitlet?
+
+En funktion är kod med ett **namn** – som du kan köra när du vill:
+
+- Skapa den **en gång**, använda den många gånger
+- Ge den **argument** – så anpassar den sig
+- Låta den **returnera** ett värde
+
+Tänk på det som ett recept: receptet är funktionen, och du kan laga det hur många gånger som helst – med olika ingredienser.
+
+---
+
+# def – skapa din första funktion
+
+```python
+def halsa():
+    print("Hej och välkommen!")
+
+halsa()
+```
+
+```text
+Hej och välkommen!
+```
+
+- `def` = **definiera** (skapa) funktionen
+- Funktionen körs inte förrän du **anropar** den: `halsa()`
+- Kolon + indrag = koden som hör till funktionen
+
+---
+
+# Anropa flera gånger
+
+```python
+def hurra():
+    print("Hurra!")
+
+hurra()
+hurra()
+hurra()
+```
+
+```text
+Hurra!
+Hurra!
+Hurra!
+```
+
+Skapa funktionen **en gång** – anropa den hur många gånger du vill!
+
+---
+
+# Argument – skicka in ett värde
+
+```python
+def personlig_halsning(namn):
+    print(f"Hej {namn}, hoppas du får en bra dag!")
+
+personlig_halsning("Kalle")
+```
+
+```text
+Hej Kalle, hoppas du får en bra dag!
+```
+
+- `namn` = **argument** – värdet som skickas in
+- Anropa med olika namn → olika hälsningar
+
+---
+
+# return – skicka tillbaka ett värde
+
+```python
+def dubbla(tal):
+    return tal * 2
+
+print("Resultat:", dubbla(5))
+```
+
+```text
+Resultat: 10
+```
+
+- `return` = **skicka tillbaka** ett värde som du kan använda
+- `dubbla(5)` blir 10 där det står
+
+---
+
+# Två argument + beräkning
+
+class: smaller
+
+```python
+def mata_monster(antal_monster, kakor):
+    totalt = antal_monster * kakor
+    print(f"Du matade {antal_monster} monster med {kakor} kakor var. Totalt slukade de {totalt} kakor... BURRRRP!")
+
+mata_monster(3, 5)
+```
+
+```text
+Du matade 3 monster med 5 kakor var. Totalt slukade de 15 kakor... BURRRRP!
+```
+
+Två argument in → beräkning → f-sträng med svaret. Provets svåraste uppgift!
+
+---
+
+# Vanliga fallgropar
+
+- Glömt `def` – funktionen finns inte
+- Glömt att **anropa** – ingenting händer
+- Glömt kolon eller indrag i funktionen
+- Fel ordning på argumenten – `mata_monster(5, 3)` ger ett annat svar
+- `print` skriver ut – `return` ger värdet vidare
+
+---
+
+# Provet – vad som testas
+
+1. `def` + anrop – enkel funktion
+2. Anropa samma funktion **tre gånger**
+3. Tre funktioner i rätt följd
+4. Funktion med ett argument (namn)
+5. Funktion med två argument + beräkning + f-sträng
+
+Teman: **spel & monster, bakning, morgonrutin** – samma prov, olika inramning.
+
+.tip[Träna med träningsfilerna – de är nästan identiska med provet, bara annat tema.]
+
+---
+
+# Sammanfattning
+
+- `def namn():` – skapa en funktion (kolon + indrag)
+- Anropa med `namn()` – annars händer inget
+- Argument = värden du skickar in i parentesen
+- `return` = skicka tillbaka ett värde
+
+---
+
+class: center, middle, section
+
+# Sista kapitlet: K8 – problemlösning
+
+.chapter-links[
+[← Tillbaka till introduktionen](index.html)
+[Nästa: K8 · problemlösning](k8.html)
+]
+
+</textarea>
+<script src="assets/remark.min.js"></script>
+<script>
+  var slideshow = remark.create({ ratio: "16:9" });
+</script>
+</body>
+</html>
