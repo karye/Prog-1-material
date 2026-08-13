@@ -115,6 +115,15 @@ li { margin: 0.35em 0; }
   font-weight: 600;
 }
 
+/* ---- Python-logga (Python-sliden i intron) ---- */
+img.logo {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  width: 4.5em;
+  height: auto;
+}
+
 /* ---- Titelslide och sektionsdelare ---- */
 .remark-slide-content.title,
 .remark-slide-content.section {
